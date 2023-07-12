@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.swal-icon--error{border-color:#f27474;-webkit-animation:animateErrorIcon .5s;animation:animateErrorIcon .5s}.swal-icon--error__x-mark{position:relative;display:block;-webkit-animation:animateXMark .5s;animation:animateXMark .5s}.swal-icon--error__line{position:absolute;height:5px;width:47px;background-color:#f27474;display:block;top:37px;border-radius:2px}.swal-icon--error__line--left{-webkit-transform:rotate(45deg);transform:rotate(45deg);left:17px}.swal-icon--error__line--right{-webkit-transform:rotate(-45deg);transform:rotate(-45deg);right:16px}@-webkit-keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@keyframes animateErrorIcon{0%{-webkit-transform:rotateX(100deg);transform:rotateX(100deg);opacity:0}to{-webkit-transform:rotateX(0deg);transform:rotateX(0deg);opacity:1}}@-webkit-keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}@keyframes animateXMark{0%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}50%{-webkit-transform:scale(.4);transform:scale(.4);margin-top:26px;opacity:0}80%{-webkit-transform:scale(1.15);transform:scale(1.15);margin-top:-6px}to{-webkit-transform:scale(1);transform:scale(1);margin-top:0;opacity:1}}.swal-icon--warning{border-color:#f8bb86;-webkit-animation:pulseWarning .75s infinite alternate;animation:pulseWarning .75s infinite alternate}.swal-icon--warning__body{width:5px;height:47px;top:10px;border-radius:2px;margin-left:-2px}.swal-icon--warning__body,.swal-icon--warning__dot{position:absolute;left:50%;background-color:#f8bb86}.swal-icon--warning__dot{width:7px;height:7px;border-radius:50%;margin-left:-4px;bottom:-11px}@-webkit-keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}@keyframes pulseWarning{0%{border-color:#f8d486}to{border-color:#f8bb86}}.swal-icon--success{border-color:#a5dc86}.swal-icon--success:after,.swal-icon--success:before{content:"";border-radius:50%;position:absolute;width:60px;height:120px;background:#fff;-webkit-transform:rotate(45deg);transform:rotate(45deg)}.swal-icon--success:before{border-radius:120px 0 0 120px;top:-7px;left:-33px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:60px 60px;transform-origin:60px 60px}.swal-icon--success:after{border-radius:0 120px 120px 0;top:-11px;left:30px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-transform-origin:0 60px;transform-origin:0 60px;-webkit-animation:rotatePlaceholder 4.25s ease-in;animation:rotatePlaceholder 4.25s ease-in}.swal-icon--success__ring{width:80px;height:80px;border:4px solid hsla(98,55%,69%,.2);border-radius:50%;box-sizing:content-box;position:absolute;left:-4px;top:-4px;z-index:2}.swal-icon--success__hide-corners{width:5px;height:90px;background-color:#fff;padding:1px;position:absolute;left:28px;top:8px;z-index:1;-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}.swal-icon--success__line{height:5px;background-color:#a5dc86;display:block;border-radius:2px;position:absolute;z-index:2}.swal-icon--success__line--tip{width:25px;left:14px;top:46px;-webkit-transform:rotate(45deg);transform:rotate(45deg);-webkit-animation:animateSuccessTip .75s;animation:animateSuccessTip .75s}.swal-icon--success__line--long{width:47px;right:8px;top:38px;-webkit-transform:rotate(-45deg);transform:rotate(-45deg);-webkit-animation:animateSuccessLong .75s;animation:animateSuccessLong .75s}@-webkit-keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@keyframes rotatePlaceholder{0%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}5%{-webkit-transform:rotate(-45deg);transform:rotate(-45deg)}12%{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}to{-webkit-transform:rotate(-405deg);transform:rotate(-405deg)}}@-webkit-keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@keyframes animateSuccessTip{0%{width:0;left:1px;top:19px}54%{width:0;left:1px;top:19px}70%{width:50px;left:-8px;top:37px}84%{width:17px;left:21px;top:48px}to{width:25px;left:14px;top:45px}}@-webkit-keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}@keyframes animateSuccessLong{0%{width:0;right:46px;top:54px}65%{width:0;right:46px;top:54px}84%{width:55px;right:0;top:35px}to{width:47px;right:8px;top:38px}}.swal-icon--info{border-color:#c9dae1}.swal-icon--info:before{width:5px;height:29px;bottom:17px;border-radius:2px;margin-left:-2px}.swal-icon--info:after,.swal-icon--info:before{content:"";position:absolute;left:50%;background-color:#c9dae1}.swal-icon--info:after{width:7px;height:7px;border-radius:50%;margin-left:-3px;top:19px}.swal-icon{width:80px;height:80px;border-width:4px;border-style:solid;border-radius:50%;padding:0;position:relative;box-sizing:content-box;margin:20px auto}.swal-icon:first-child{margin-top:32px}.swal-icon--custom{width:auto;height:auto;max-width:100%;border:none;border-radius:0}.swal-icon img{max-width:100%;max-height:100%}.swal-title{color:rgba(0,0,0,.65);font-weight:600;text-transform:none;position:relative;display:block;padding:13px 16px;font-size:27px;line-height:normal;text-align:center;margin-bottom:0}.swal-title:first-child{margin-top:26px}.swal-title:not(:first-child){padding-bottom:0}.swal-title:not(:last-child){margin-bottom:13px}.swal-text{font-size:16px;position:relative;float:none;line-height:normal;vertical-align:top;text-align:left;display:inline-block;margin:0;padding:0 10px;font-weight:400;color:rgba(0,0,0,.64);max-width:calc(100% - 20px);overflow-wrap:break-word;box-sizing:border-box}.swal-text:first-child{margin-top:45px}.swal-text:last-child{margin-bottom:45px}.swal-footer{text-align:right;padding-top:13px;margin-top:13px;padding:13px 16px;border-radius:inherit;border-top-left-radius:0;border-top-right-radius:0}.swal-button-container{margin:5px;display:inline-block;position:relative}.swal-button{background-color:#7cd1f9;color:#fff;border:none;box-shadow:none;border-radius:5px;font-weight:600;font-size:14px;padding:10px 24px;margin:0;cursor:pointer}.swal-button:not([disabled]):hover{background-color:#78cbf2}.swal-button:active{background-color:#70bce0}.swal-button:focus{outline:none;box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(43,114,165,.29)}.swal-button[disabled]{opacity:.5;cursor:default}.swal-button::-moz-focus-inner{border:0}.swal-button--cancel{color:#555;background-color:#efefef}.swal-button--cancel:not([disabled]):hover{background-color:#e8e8e8}.swal-button--cancel:active{background-color:#d7d7d7}.swal-button--cancel:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(116,136,150,.29)}.swal-button--danger{background-color:#e64942}.swal-button--danger:not([disabled]):hover{background-color:#df4740}.swal-button--danger:active{background-color:#cf423b}.swal-button--danger:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(165,43,43,.29)}.swal-content{padding:0 20px;margin-top:20px;font-size:medium}.swal-content:last-child{margin-bottom:20px}.swal-content__input,.swal-content__textarea{-webkit-appearance:none;background-color:#fff;border:none;font-size:14px;display:block;box-sizing:border-box;width:100%;border:1px solid rgba(0,0,0,.14);padding:10px 13px;border-radius:2px;transition:border-color .2s}.swal-content__input:focus,.swal-content__textarea:focus{outline:none;border-color:#6db8ff}.swal-content__textarea{resize:vertical}.swal-button--loading{color:transparent}.swal-button--loading~.swal-button__loader{opacity:1}.swal-button__loader{position:absolute;height:auto;width:43px;z-index:2;left:50%;top:50%;-webkit-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%);text-align:center;pointer-events:none;opacity:0}.swal-button__loader div{display:inline-block;float:none;vertical-align:baseline;width:9px;height:9px;padding:0;border:none;margin:2px;opacity:.4;border-radius:7px;background-color:hsla(0,0%,100%,.9);transition:background .2s;-webkit-animation:swal-loading-anim 1s infinite;animation:swal-loading-anim 1s infinite}.swal-button__loader div:nth-child(3n+2){-webkit-animation-delay:.15s;animation-delay:.15s}.swal-button__loader div:nth-child(3n+3){-webkit-animation-delay:.3s;animation-delay:.3s}@-webkit-keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}@keyframes swal-loading-anim{0%{opacity:.4}20%{opacity:.4}50%{opacity:1}to{opacity:.4}}.swal-overlay{position:fixed;top:0;bottom:0;left:0;right:0;text-align:center;font-size:0;overflow-y:auto;background-color:rgba(0,0,0,.4);z-index:10000;pointer-events:none;opacity:0;transition:opacity .3s}.swal-overlay:before{content:" ";display:inline-block;vertical-align:middle;height:100%}.swal-overlay--show-modal{opacity:1;pointer-events:auto}.swal-overlay--show-modal .swal-modal{opacity:1;pointer-events:auto;box-sizing:border-box;-webkit-animation:showSweetAlert .3s;animation:showSweetAlert .3s;will-change:transform}.swal-modal{width:478px;opacity:0;pointer-events:none;background-color:#fff;text-align:center;border-radius:5px;position:static;margin:20px auto;display:inline-block;vertical-align:middle;-webkit-transform:scale(1);transform:scale(1);-webkit-transform-origin:50% 50%;transform-origin:50% 50%;z-index:10001;transition:opacity .2s,-webkit-transform .3s;transition:transform .3s,opacity .2s;transition:transform .3s,opacity .2s,-webkit-transform .3s}@media (max-width:500px){.swal-modal{width:calc(100% - 20px)}}@-webkit-keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}@keyframes showSweetAlert{0%{-webkit-transform:scale(1);transform:scale(1)}1%{-webkit-transform:scale(.5);transform:scale(.5)}45%{-webkit-transform:scale(1.05);transform:scale(1.05)}80%{-webkit-transform:scale(.95);transform:scale(.95)}to{-webkit-transform:scale(1);transform:scale(1)}}</style>
+<title>국가공간정보포털</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:url" content="http://www.nsdi.go.kr/lxportal/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="국가공간정보포털">
+<meta property="og:description" content="국가는 다양한 방법으로 공간정보 서비스를 제공하기 위해 노력해왔으나, 산재된 서비스 체계로 인해 공간정보 활용에 어려움이 있었습니다. 그래서 국가·공공·민간에서 생산한 공간정보를 한 곳에서, 한 번에, 누구나 쉽게 활용할 수 있도록 국가공간정보포털을 구축하였습니다. 국가공간정보포털은 국민과 함께하는 공간정보의 허브가 되겠습니다.">
+<meta property="og:image" content="http://www.nsdi.go.kr/lxportal/images/introduce/img_introduce01_01.jpg">
+<meta property="og:image:width" content="780">
+<meta property="og:image:height" content="767">
+<meta property="og:image:type" content="image/jpeg">
+
+<link rel="stylesheet" type="text/css" href="project_files/common.css"> 
+<link rel="stylesheet" type="text/css" href="project_files/layout.css"> 
+ 
+ 
+<link rel="stylesheet" type="text/css" href="project_files/main.css"> 
+
+<script type="text/javascript" async="" src="project_files/analytics.js"></script><script type="text/javascript" async="" src="project_files/js_002"></script><script src="project_files/jquery-1.11.1.min.js"></script>
+<script src="project_files/jquery-ui.min.js"></script> 
+<script src="project_files/jquery.animation.easing.js"></script> 
+<script src="project_files/common.js"></script> 
+<script src="project_files/jquery.yjslider-1.2.js"></script> 
+<script src="project_files/zoom.js"></script>
+
+<script src="project_files/20160104_22064290007188.js"></script>
+<script>var windowWidth0 = 505;
+var windowHeight0 = 613;
+var windowLeft0 = 10;
+var windowTop0 = 10;
+var windowSize0 = "width=" + windowWidth0 + ",height=" + windowHeight0 + ",left=" + windowLeft0 + ",top=" + windowTop0 + ",screenX=" + windowLeft0 + ",screenY=" + windowTop0;
+var win0 = window.open("skin/popup/imageonly/popup.html?popupno=193", "popup_193", windowSize0);
+win0.focus();
+</script></head>
+<body>
+
+<link rel="stylesheet" type="text/css" href="project_files/font-awesome.css">
+
+<script src="project_files/autocomplete.js"></script>
+<script src="project_files/cookie.js"></script>
+
+<script>
+	$(function() {
+		//날짜별 이미지변경 2017.12.15
+		var todayImg = 'day/20230521'+".png" ; 	// 일자에 맞는 이미지
+		var imgUrl = '/lxportal/images/common/main/'; 
+		 $.ajax({
+		     url: imgUrl+todayImg,
+		     type: 'HEAD',	     
+		     success: function () {
+		    	 $("#changeDateImg").attr("src",imgUrl+todayImg);
+		     },
+		     error: function () {
+		    	 $("#changeDateImg").attr("src",imgUrl+"daynull.png");
+		     }
+		});
+		//인기검색어.
+		ajaxLayerDetail("", "", "", "");
+		 
+	});
+
+	// 공통검색
+	function commonSearch() {
+		var sf = document.searchForm;
+		var searchCollection = sf.searchCollection.value;
+		if(searchCollection == "ALL") {
+			allSearch();
+		}else {
+			mainSearch(searchCollection);
+		}
+	}
+	
+	//통합검색.
+	function allSearch() {
+		var sf = document.searchForm;
+		var asf = document.allSearchForm;
+
+		var searchKeyword = sf.searchKeyword.value;
+		if (searchKeyword == null || searchKeyword == "") {
+			alert("검색어를 입력해주세요.");
+			return false;
+		}
+		if(searchKeyword != null && searchKeyword.trim() == ""){
+			alert("검색어를 입력해주세요.");
+			return false;
+		}
+		addCookieKeyword(searchKeyword);
+		
+		asf.searchKeyword.value = searchKeyword;
+		asf.target = "_blank";
+		asf.submit();
+	}
+	
+	//개별검색.
+	function mainSearch(searchCollection) {
+		var sf = document.searchForm;
+		var msf = document.mainSearchForm; 
+
+		var searchKeyword = sf.searchKeyword.value;
+		if (searchKeyword == null || searchKeyword == "") {
+			alert("검색어를 입력해주세요.");
+			return false;
+		}
+		if(searchKeyword != null && searchKeyword.trim() == ""){
+			alert("검색어를 입력해주세요.");
+			return false;
+		}
+		addCookieKeyword(searchKeyword);
+		
+		msf.searchCollection.value = searchCollection;
+		msf.oldSearchKeyword.value = msf.searchKeyword.value;
+		msf.searchKeyword.value = searchKeyword;
+		msf.target = "_blank";
+		msf.submit();
+	}
+
+	function enterSearch(e) {
+		var event_code = (window.netscape) ? e.which : event.keyCode;
+		if (event_code == 13) {
+			commonSearch();
+		}
+	}
+
+	function clickSearch(searchKeyword) {
+		var asf = document.allSearchForm;
+		
+		addCookieKeyword(searchKeyword);
+		
+		asf.searchKeyword.value = searchKeyword;
+		asf.target = "_blank";
+		asf.submit();
+	}
+
+	//로그아웃.
+	function logout(link) {
+		if(link.indexOf('2877') >= 0){
+			window.document.location.href = "/lxportal/j_spring_security_logout";
+		}else{
+			window.document.location.href = "/lxportal/j_spring_security_logout?_to="
+				+ encodeURIComponent(link);
+		}
+		
+	}
+
+	//개발지원클라우드.
+	function fn_goCloud() {
+		if (false) {
+			//window.open("/lxportal/?menuno=4051&login_id="+'', '_blank');
+			window.open("http://devcloud.lx.or.kr/?login_id="+'', '_blank');
+		} else {
+			if (confirm('로그인이 필요한 서비스입니다.')) {
+				location.href = "/lxportal/?menuno=2971";		
+			}
+		}
+	}
+	
+	//인기검색어.
+	function ajaxLayerDetail(url, type, data, callback) {
+		$.ajax({
+			url : "/lxportal/getRankWordList.html",
+			type : "POST",
+			data : data,
+			dataType : "json",
+			success : function(json) {
+				
+				var rankHtml = '';
+				for (i = 0; i < json.length; i++) {
+					var keywords = json[i].KEYWORDS;
+					var sumCnt = json[i].SUM_CNT;
+					var rankUpDown = json[i].RANK_UP_DOWN;
+					var sumCntComma;
+	
+					rankHtml += '<li>';
+					rankHtml += '<i title="인기검색어' + (i + 1) + '위" class="num' + (i + 1) + '"></i><a href="javascript:clickSearch(\'' + keywords + '\');" title="인기검색어 ' + keywords + ' 새창열림">' + keywords + '</a>';
+					rankHtml += '<span>';
+	
+					if (sumCnt <= 1) {
+						rankHtml += '<i title="New" class="listnew"></i>';
+					} else {
+						if (rankUpDown > 0) {
+							rankHtml += '<i title="상승" class="listup"></i>';
+						} else if (rankUpDown < 0) {
+							rankHtml += '<i title="다운" class="listdown"></i>';
+						}
+					}
+	
+					sumCntComma = sumCnt.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+					rankHtml += sumCntComma;
+					rankHtml += '</span>';
+					rankHtml += '</li>';
+				}
+				
+				$("ol#rankList").html(rankHtml);
+				
+				
+			},
+			error : function(e) {
+				console.log(e);
+			}
+		});
+	}
+</script>
+
+<div id="skipNavi">
+	<ul>		
+		<li><a href="#gnbNavi">주메뉴 바로가기</a></li>
+		<li><a href="#slides">본문 바로가기</a></li>
+		</ul>
+</div>
+
+<div id="wrap">
+
+	<div id="header">
+	
+		<div class="gnb">
+		
+			<div class="top_util_warp">
+				<div class="top_util">
+					<ul>
+						<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2679">국가공간정보포털</a></li>
+						<li><a href="#" class="service_a">서비스</a>
+							<ul class="util_search">
+								<li><a href="http://www.newjijuk.go.kr/" target="_blank">바른땅시스템</a></li>
+								<li><a href="http://www.smartgeoexpo.kr/" target="_blank">스마트국토엑스포</a></li>
+								<li><a href="http://www.juso.go.kr/addrlink/main.do" target="_blank">도로명주소신청</a></li>
+								</ul></li>
+						<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4037" target="_blank">오픈마켓</a></li>
+						<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4079" target="_blank">국가중점데이터</a></li>
+						<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4058" target="_blank">공간정보홍보관</a></li>
+						</ul>
+					
+					<div class="lang">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=3085" class="on" target="_blank" title="영문사이트(새창)">ENGLISH</a>
+					</div>
+					
+					<p class="font_size">
+						<span>글자크기</span> 
+						<a href="#" onclick="Zoom.exec(-1);return false;" class="font-big" title="축소">축소</a> 
+						<a href="#" onclick="Zoom.exec(0);return false;" class="font-now" title="원래크기로">원래크기로</a> 
+						<a href="#" onclick="Zoom.exec(1);return false;" class="font-small" title="확대">확대</a>
+					</p>
+					
+					<div class="lang">
+						<a class="on">글자크기</a>
+					</div>
+				</div>
+			</div><!-- //top_util_warp -->
+			
+			
+			<div class="topinfo fclear">
+				<h1>
+					<a href="http://www.nsdi.go.kr/lxportal/?menuno=2679"><img src="project_files/logo.gif" alt="국토교통부 국가공간정보포털"></a>
+				</h1>
+				<div class="specialday"><img id="changeDateImg" src="project_files/daynull.png" alt=""></div>
+				<div class="search">
+					<div class="search_box">
+						<label for="searchKeyword" class="skip">검색단어입력</label>
+						<form id="searchForm" name="searchForm" onsubmit="return false;">
+							<input type="hidden" name="menuno" value="2813"> 
+							<input type="hidden" id="searchDirection" name="searchDirection" value="s"> 
+							<label for="searchCollection" class="skip">통합검색</label>
+							<select id="searchCollection" style="float: left;margin-top: 10px;" title="통합검색">
+								<option value="ALL" selected="selected">통합검색</option>
+								<option value="MARKETCKAN">오픈마켓</option>
+								<option value="OPENAPI">국가중점데이터</option>
+								<option value="BBS">게시판</option>
+								<option value="KNOWLEDGE">공간정보지식</option>
+								<option value="LOD">LOD</option>
+								<option value="PAGES">웹페이지</option>
+								<option value="POI">시설</option>
+								<option value="ADDRESS">주소</option>
+								<option value="JIBUN">지번</option>
+								<option value="DIC">사전</option>
+							</select>
+							<span class="t-search_input">
+							<input type="text" id="searchKeyword" name="searchKeyword" size="60" onkeypress="enterSearch(event);" title="검색어입력">
+							<a href="javascript:void(0);" class="btn_search" title="새창열림" onclick="commonSearch();" onkeypress="if(window.event.keyCode==13) commonSearch();">
+							<img src="project_files/t-search.png" alt="검색" width="25">
+							</a>
+							</span> 
+							<div class="search_auto_cmplt" style="width: 333px; position: absolute; z-index: 999999; top: 50px; left: 180px; background-color: #ffffff;">
+								<ul id="searchAutoCmplt" class="search_area"></ul>
+							</div>
+						</form>
+						<form name="allSearchForm" method="post" action="/lxportal/allSearch.html">
+							<input type="hidden" name="menuno" value="2813"> <input type="hidden" name="searchKeyword" value=""> <input type="hidden" name="reSearchYn" value="N"> <input type="hidden" name="sortCondition" value="w">
+						</form>
+						<form name="mainSearchForm" method="post" action="/lxportal/mainSearch.html">
+							<input type="hidden" name="menuno" value="2978"> 
+							<input type="hidden" name="searchKeyword" value=""> 
+							<input type="hidden" name="oldSearchKeyword" value=""> 
+							<input type="hidden" name="reSearchYn" value="N"> 
+							<input type="hidden" name="searchCollection" value=""> 
+							<input type="hidden" name="sortCondition" value="w">
+							<input type="hidden" name="detailYn" value="N">
+						</form>
+					</div>
+					</div>
+				<div class="util">
+					<ul>
+						<li class="first top-login">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2971" class="first">로그인</a>
+								</li>
+								<li class="top-join">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2973">회원가입</a>
+								</li>
+							</ul>
+				</div>
+			</div> <!-- //topinfo fclear -->
+			
+			<div id="gnbNavi" class="bottom_wrap">
+				<ul id="gnb" style="height: 50px;">
+					<li class="sub_background">
+						<div class="gnb_bg" style="height: 0px;">
+							<div class="gnb_bg_content"></div>
+						</div>
+					</li>
+					
+					<li class="gnb01">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=4038" class="gnblink">개방공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4038" class="on">LOD개방서비스</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4037" target="_blank" class="on">오픈마켓
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb02">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=4077" class="gnblink">활용공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4077">오픈API목록</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2790">국가공간정보포털API</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4075">나만의주제도만들기</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4078" target="_blank">LX맵API
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4080" target="_blank">도로명주소안내도API
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4079" target="_blank">국가중점데이터API
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb03">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=2789" class="gnblink on">열람공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu on">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4085" class="on">부동산중개업조회</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4088" class="on">토지찾기서비스</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4074" class="on">국토정보조회</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxmap/" target="_blank" class="on">지도서비스
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>										
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2774" class="on">부동산개발업조회</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4069" class="on">공간정보목록정보</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2732" class="on">공간정보통계</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2761" class="on">공간정보산업현황</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4053">개방데이터셋목록</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+
+					<li class="gnb04">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=4064" class="gnblink">지식공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4064">공간정보소개</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2772">자료실</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2741">공간정보표준</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4055" target="_blank">공간정보전문지식
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2766">공간정보정책</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2814">공간정보법령</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2852">연구자료</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li> 
+
+					<li class="gnb05">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=4009" class="gnblink">소통공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2787">Q&amp;A</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2786">FAQ</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2824">설문조사</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4009">공간인포그래픽</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4058" target="_blank">공간정보홍보관
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4059" target="_blank">공간카페
+											<i class="fa fa-clone" aria-hidden="true" style="font-size:10px;margin-left:10px;"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li> 
+					
+					<li class="gnb06">
+						<a href="http://www.nsdi.go.kr/lxportal/?menuno=2681" class="gnblink">알림공간</a>
+						<div class="gnb_sub_menu" style="height: 0px;">
+							<div class="gnb_content">
+								<div class="gnb_list">
+									<ul class="sub_menu">
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2746">공지사항</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2982">보도자료</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2681">국가공간정보포털소개</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2782">공간정보교육</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2781">채용정보</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2854">홍보사진/영상</a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2773">정기간행물</a></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li> 
+					
+				</ul> <!-- //#gnb -->
+				
+			</div> <!-- //#gnbNavi -->
+			<div id="whichServer" style="position: absolute; top: 0; left: 0; color: #fbfbfb; color: rgba(1,1,1,0); z-index: 999999;">②ⓞⓞ</div>
+			
+		</div> <!-- //.gnb -->
+	</div> <!-- //#header -->
+	
+<call type="treemenu" skin="default" no="1"></call>
+<link rel="stylesheet" type="text/css" href="project_files/font-awesome.css">
+
+<script src="project_files/jquery-1.11.1.min.js"></script>
+<script src="project_files/main.slide.fade.all.min.js"></script>
+<script src="project_files/ui.js"></script>
+<!-- <script type="text/javascript" src="/lxportal/js/sweetalert.min.js"></script> -->
+<script src="project_files/sweetalert.min.js"></script>
+
+<script>
+<!--
+	$(function() {
+		//remove css
+		$("LINK[href*='/lxportal/css/nsdi/board.css']").remove();  
+		$("LINK[href*='/lxportal/css/nsdi/content.css']").remove();
+		
+		//슬라이드 옵션
+		$('#slides').slides({
+			play: 3000, 		// 셋타임
+			hoverPause: true, 	// stop 옵셥
+			effect: 'fade',
+			fadeSpeed: 350,
+			generateNextPrev: true
+		});
+		
+		//슬라이드 옵션
+		$('#alrimpan').slides({
+			play: 3000, 		// 셋타임
+			hoverPause: true, 	// stop 옵셥
+			effect: 'fade',
+			fadeSpeed: 350,
+			generateNextPrev: true
+		});
+		
+/* 		
+		//월별(계절별) 이미지변경
+		var monthLeftImg = 'month/main_left_'   + '202305' +'.png' ;		// 월에 맞는 left 이미지
+		var monthRightImg = 'month/main_right_' + '202305' +'.png' ;		// 월에 맞는 right 이미지
+		var imgUrl = '/lxportal/images/common/main/';
+		
+		$.ajax({
+			url: imgUrl+monthLeftImg,
+		    type: 'HEAD',	     
+		    success: function () {
+		    	$('.bgleft').css({"background":"url('" + imgUrl + monthLeftImg+ "') repeat-x left top "});
+		    },
+		    error: function () {
+		    }
+		}); 
+		
+		$.ajax({
+		    url: imgUrl+monthRightImg,
+		    type: 'HEAD',	     
+		    success: function () {
+		    	$('.bgright').css({"background":"url('" + imgUrl + monthRightImg+ "') repeat-x left top "});
+		    },
+		    error: function () {
+		   	}
+		});
+ */		
+		//초기 load시 set
+		$(".tab_list_box:eq(0) > .btn_more:eq(0)").show();
+		$(".tab_list_box:eq(0) > .btn_more:eq(1)").hide();
+		$(".tab_list_box:eq(0) > .btn_more:eq(2)").hide();
+		$(".tab_list_box:eq(0) > .btn_more:eq(3)").hide();
+		$(".tab_list_box:eq(1) > .btn_more:eq(0)").show();
+		$(".tab_list_box:eq(1) > .btn_more:eq(1)").hide();
+		$(".tab_list_box:eq(1) > .btn_more:eq(2)").hide();
+		
+		// 공간인포그래픽, 나만의주제도만들기, 공간활용우수사례 Tab
+		$(".tab-li").on("mouseenter focus", function () {
+			let tabSpanIndex = $(".tab-li").index(this);
+			let tabSpanLength = $(".case_category > .tab-li").length;
+			
+			$(".case_category > li").removeClass("on");
+			$(".case_category > li:eq("+tabSpanIndex+")").addClass("on");
+			
+			// 웹 접근성
+			$(".case_category > li").attr("aria-selected", "false");
+			$(".case_category > li:eq("+tabSpanIndex+")").attr("aria-selected", "true");
+			
+			if(tabSpanIndex<2) {
+				for (i=0;i<tabSpanLength;i++) {						
+					if (tabSpanIndex == i ) {
+						$(".case_con_wrap > .case_con_container:eq(" + i + ")").show();							  
+// 						$(".case_category > li > :eq(" + i + ")").addClass("on");
+					} else {
+						$(".case_con_wrap > .case_con_container:eq(" + i + ")").hide();
+// 						$(".case_category > li > :eq(" + i + ")").removeClass("on");
+					}
+				}
+			}
+		});
+		
+		$(".tab-li, .tab-li0, .tab-li1").on("keydown", function(event) {
+			event = event || window.event;
+			let keycode = event.keyCode || event.which;
+
+			// tab-li | tab-li0 | tab-li1
+			let targetClass = event.target.classList[0];
+			 
+			switch(keycode){
+				case 37:  // left arrow
+					event.preventDefault();
+			   
+					if (this.previousElementSibling) {
+						$(this)
+							.attr("tabindex", "-1")
+						.prev()
+							.attr("tabindex", "0")
+						.focus();
+					} else {
+						// 초점이 첫 번째 요소에 있었다면, 마지막 탭으로 초점 이동
+						$(this)
+							.attr("tabindex", "-1");
+						$("." + targetClass + ":last-of-type")
+							.attr("tabindex", "0")
+						.focus();
+					}
+					break;
+				case 39:  // right arrow
+					event.preventDefault();
+				
+					if(this.nextElementSibling) {
+					$(this)
+						.attr("tabindex", "-1")
+					.next()
+						.attr("tabindex", "0")
+					.focus();
+					} else {
+						// 초점이 마지막 요소에 있었다면, 첫 번째 탭으로 초점 이동
+						$(this)
+							.attr("tabindex", "-1");
+						$("." + targetClass + ":first-of-type")
+							.attr("tabindex", "0")
+							.focus();
+					}
+					break;
+			 }
+		});
+		
+		$(".tablist").on("keydown", ".on", function(event){
+			event = event || window.event;
+			var keycode = event.keyCode || event.which;
+
+			// tab 키 눌렀을 때 (shift + tab은 제외)
+			if(!event.shiftKey && keycode === 9){
+				event.preventDefault ? event.preventDefault() : event.returnValue = false;
+				$("#" + $(this).attr("aria-controls"))
+					.attr("tabindex", "0")
+					.addClass("on")
+					.focus()
+				.siblings(".tabpanel")
+					.attr("tabindex", "-1")
+				.removeClass("on");
+			}
+		});
+		
+		// 보도자료, 정책자료, 유통자료, 표준자료 : tab-li0 / 공지사항,Q&A,FAQ : tab-li1
+ 		$(".tab-li0, .tab-li1").on("mouseenter focus", function(event) {
+			// .tab-li0 | .tab-li1
+			let targetClass = event.target.tagName.toLowerCase() === "li" ? "." + event.target.classList[0] : "." + $(event.target).parent()[0].classList[0];
+			 
+			let tabSpanIndex = $(targetClass).index(this);
+			let geoTabIndex = 0 ;	
+	
+			if (targetClass === ".tab-li1") {
+				geoTabIndex = 1 ;
+			}	
+			
+			let tabSpanLength = $(".tabmenu:eq(" + geoTabIndex + ") > " + targetClass).length;
+		
+			for (i=0;i<tabSpanLength;i++) {						
+				if (tabSpanIndex == i) {
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .blind:eq(" + i + ")").show();
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .bul_list:eq(" + i + ")").show();	
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .btn_more:eq(" + i + ")").show();
+					$(".tabmenu:eq(" + geoTabIndex + ") > :eq(" + i + ")").addClass("on");
+					$(".tabmenu:eq(" + geoTabIndex + ") > :eq(" + i + ")").attr("aria-selected", "true");
+				} else {
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .blind:eq(" + i + ")").hide();
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .bul_list:eq(" + i + ")").hide();
+					$(".tab_list_box:eq(" + geoTabIndex + ") > .btn_more:eq(" + i + ")").hide();
+					$(".tabmenu:eq(" + geoTabIndex + ") > :eq(" + i + ")").removeClass("on");
+					$(".tabmenu:eq(" + geoTabIndex + ") > :eq(" + i + ")").attr("aria-selected", "false");	
+				}
+			}
+		});
+		
+		//부동산서비스 tab2
+		$(".tab-li2").click(function (){
+			var tabSpanIndex = $(".tab-li2").index(this);
+			var tabSpanLength = $(".choice > li.tab-li2").length;					
+			
+			for (i=0;i<tabSpanLength;i++) {						
+				if (tabSpanIndex == i ) {														  
+					$(".choice > li:eq(" + i + ")").addClass("on");  	//부동산개발업 dev							  	
+				} else {							
+					$(".choice > li:eq(" + i + ")").removeClass("on");	//부동산중개업 broker
+				}
+			}
+	  });
+	});
+
+	//페이스북
+	var fbpop = null;
+	function goFace(link) {
+		if (document.getElementById("actSns") != null && document.getElementById("bbsnoSns") != null) {
+		    link = link + "&act=" + document.getElementById("actSns").value + "&bbsno=" + document.getElementById("bbsnoSns").value;
+		}
+		
+	    var w = (screen.width-450)/2;
+	    var h = (screen.height-450)/2; 
+	    var href = "http://www.facebook.com/sharer.php?u="+encodeURIComponent(link);
+	    
+	    if (fbpop == null) {
+	    	fbpop = window.open(href, 'facebook', 'width=450,height=450,left='+w+',top='+h+',scrollbars=0');
+		}
+	    
+	    fbpop.focus();
+	    
+	    ajaxSnsUpdate("facebook");
+	}
+	
+	//트위터
+	var ttpop = null;
+	function goTwitter(link) {
+		if (document.getElementById("actSns") != null && document.getElementById("bbsnoSns") != null) {
+		    link = link + "&act=" + document.getElementById("actSns").value + "&bbsno=" + document.getElementById("bbsnoSns").value;
+		}
+		
+	    var w = (screen.width-450)/2;
+	    var h = (screen.height-450)/2; 
+		var href = "http://twitter.com/share?text="+encodeURIComponent('이곳에 제목을 입력')+"&url="+encodeURIComponent(link);
+
+		if (ttpop == null) {
+	    	ttpop = window.open(href, 'twitter', 'width=450,height=450,left='+w+',top='+h+',scrollbars=0');
+		}
+		
+		ttpop.focus();
+		
+	    ajaxSnsUpdate("twitter");
+	}
+	
+	function ajaxSnsUpdate(target) {
+		$.ajax({
+			url	: "/lxportal/ajax/snsUpdate.html",
+			type	: "POST",
+			data	: {"menuno":"","target":target }, 
+			dataType: "json",
+			success	: function(json) {
+					$("span#facebookcnt").text(json[0].FACEBOOK);
+					$("span#twittercnt").text(json[0].TWITTER);
+				},
+			error   : function(e) {
+			}
+		});
+	}
+
+	//프린트
+	var fnPrint = function() {
+		if (navigator.userAgent.indexOf("Chrome") > 0) {
+			window.print();
+		} else {
+			var strFeature = "width=840, height=1000, all=no, margin:0 auto";
+			var objWin = window.open('', 'print', strFeature);
+	
+			objWin.document.write("<link rel='stylesheet' type='text/css' href='/lxportal/css/nsdi/common.css'>");
+			objWin.document.write("<link rel='stylesheet' type='text/css' href='/lxportal/css/nsdi/layout.css'>");
+			objWin.document.write("<link rel='stylesheet' type='text/css' href='/lxportal/css/nsdi/content.css'>");
+			objWin.document.write("<link rel='stylesheet' type='text/css' href='/lxportal/css/nsdi/board.css'>");
+			objWin.document.write("<link rel='stylesheet' type='text/css' href='/lxportal/css/nsdi/main.css'>");
+			objWin.document.write("<div class='print'/>");
+			objWin.document.write("<div id='cont_area' class='cont_area'/>");
+			objWin.document.write($("#cont_area").html());
+			objWin.document.write("</div>");
+			objWin.document.write("</div>");
+
+			objWin.document.close();
+	
+			objWin.print();
+			objWin.close();	
+		}		
+	}
+	
+	//공간인포그래픽 미리보기 팝업 
+	function popupView(boardNo) {	 
+		var url ="/lxportal/zcms/nsdi/issue/issuePreview.html?boardNo="+boardNo ;
+		var windowName = "popup";
+		var windowWidth = 1260;
+		var windowHeight = 768;
+		var windowLeft = parseInt((screen.availWidth/2) - (windowWidth/2));
+		var windowTop = parseInt((screen.availHeight/2) - (windowHeight/2));
+		var windowSize = "width=" + windowWidth + ",height=" + windowHeight + ",left=" + windowLeft + ",top=" + windowTop + ",screenX=" + windowLeft + ",screenY=" + windowTop + ", scrollbars=yes,resizable=yes ";
+		
+		window.open(url, windowName, windowSize);	
+	}
+
+	//부동산서비스검색 function
+	function Search() {
+		//부동산중개업조회broker, 부동산개발업조회dev
+		var selectWhere = $(".choice > li:eq(0)").attr("class");   	
+		
+		if (selectWhere == "tab-li2 on") { 
+			var dev = "broker";
+		} else {
+			var dev = "dev";
+		}
+		  	
+	 	f = document.devForm; 
+	 	f.shInit.value = "N";
+	 	f.shSido.value = $("#S_shSido").val();
+	 	f.pageIndex.value = "0" ;
+	 	
+	 	//부동산중개업조회broker
+	 	if (dev == "broker") {
+	 		if ($("#S_shSido").val() == "") {
+		 		alert("지역을 먼저 선택하세요.");
+		 		$("#S_shSido").focus();
+		 		return;
+		 	}
+	 		
+	 		f.shSelect.value = "1"; //1:중개업사무소
+	 		f.shSelect2.value ="1";	//1.상호명
+	 		f.shWord.value = $("#S_shCmpNm").val();
+	 		f.orderSelect.value="";
+	 		f.action = "/lxportal/?menuno=4085" ;
+		
+		//부동산개발업조회dev
+	 	} else {
+	 		f.shSort.value = "CMP_NM";
+	 		f.shDesc.value = "" ;
+	 		f.shCmpNm.value = $("#S_shCmpNm").val();
+	 		f.action = "/lxportal/?menuno=4083" ; 	
+	 	}
+			
+		f.target = "_self";
+		f.submit();
+	} 
+	
+	//오픈마켓 > 원본데이터,국가중점데이터
+	function goQnaDetail(bbsno) {
+		$("<form/>", {
+			action: '/lxportal/?menuno=2787',
+			method: 'post'
+		}).append(
+			
+			$("<input/>", {
+				type: 'hidden',
+				id: 'siteno',
+				name: 'siteno',
+				value: '20'
+			}), 
+			
+			$("<input/>", {
+				type: 'hidden',
+				id: 'act',
+				name: 'act',
+				value: 'view'
+			}), 
+			
+			$("<input/>", {
+				type: 'hidden',
+				id: 'bbsno',
+				name: 'bbsno',
+				value: bbsno
+			})
+			
+		).appendTo('body').submit();	
+	}
+	
+	//공간정보 개발지원플랫폼.
+	function fn_goCloud() {
+		if (false) {
+			//window.open("/lxportal/?menuno=4051&login_id="+'', '_blank');
+			window.open("https://devcloud.lx.or.kr/?login_id="+'', '_blank');
+		} else {
+			if (confirm('로그인이 필요한 서비스입니다.')) {
+				location.href = "/lxportal/?menuno=2971";		
+			}
+		}
+	}
+	function openLink(link) {
+	
+		var ua = window.navigator.userAgent;
+		if (ua.indexOf('MSIE') > 0 || ua.indexOf('Trident') > 0) {
+			window.open("https://kgeop.go.kr/html/chromePage.html", '_blank');
+		} else {
+			
+			window.open("https://kgeop.go.kr/myland/laf/" + link, '_blank');
+		} 
+	}
+	-->	
+
+
+</script>
+<form id="searchVO" name="devForm" action="/lxportal/?menuno=2679" method="post"><input type="hidden" name="shInit" value="">
+	<input type="hidden" name="shSort" value="">
+	<input type="hidden" name="shDesc" value="">
+	<input type="hidden" name="pageIndex" value="">
+	<input type="hidden" name="shSido" value="">
+	<input type="hidden" name="shCmpNm" value="">
+	<input type="hidden" name="shSelect" value="">
+	<input type="hidden" name="shSelect2" value="">
+	<input type="hidden" name="shWord" value="">
+	<input type="hidden" name="shSigungu" value="">
+	<input type="hidden" name="shDong" value="">
+	<input type="hidden" name="orderSelect" value="">
+</form><!-- main_s -->
+<div class="wrap_main_content">
+	<div class="bgleft"></div>
+
+	<div class="main_content">
+		<div class="inner_con">
+			<div class="scetion1_coreservice cf">
+
+				<div id="slides" class="scetion1_banner_article">
+					<div class="slides_container" style="display: block;">
+						<div class="slides_control" style="position: relative; width: 3780px; height: 410px; left: -1260px;"><div class="main_spot first" title="공간정보의 가치를 실현하는 국가공간정보 포털" style="position: absolute; top: 0px; left: 1260px; z-index: 0; display: none;"></div><div class="main_spot second" title="공간정보를 만나는 가장 빠른 방법. 오픈마켓" style="position: absolute; top: 0px; left: 1260px; z-index: 0;">							
+							<a href="http://www.nsdi.go.kr/lxportal/?menuno=4037" class="btn" target="_blank" title="오픈마켓 데이터 다운로드">오픈마켓 데이터
+								다운로드</a>
+						</div><div class="main_spot third" title="공간정보를 세상과 더 넓게 연결하다. LOD 개방서비스" style="position: absolute; top: 0px; left: 1260px; z-index: 0; display: none;">							
+							<a href="http://www.nsdi.go.kr/lxportal/?menuno=4038" class="btn" title="LOD 개방서비스">LOD 개방서비스</a>
+						</div><div class="main_spot sixth" title="사용자가 직접 해보는 공간분석. 공간빅데이터 분석 플랫폼" style="position: absolute; top: 0px; left: 1260px; z-index: 0; display: none;">
+							<a href="http://gisbig.nsdi.go.kr/" class="btn" target="_blank" title="공간빅데이터 분석 플랫폼">공간빅데이터 분석 플랫폼</a>
+						</div></div>
+						
+						
+						
+						
+						
+
+					</div><a href="#" title="이전" class="prev"><span class="blind">메인배너 이전</span></a><a href="#" title="다음" class="next"><span class="blind">메인배너 다음</span></a>
+				<ul class="pagination"><li class=""><a href="#0"><span class="blind">1</span></a></li><li class="current"><a href="#1"><span class="blind">2</span></a></li><li class=""><a href="#2"><span class="blind">3</span></a></li><li class=""><a href="#3"><span class="blind">4</span></a></li></ul></div>
+
+				<div class="rankView">
+					<dl>
+						<dt>인기검색어</dt>
+						<dd>
+							<ol id="rankList"><li><i title="인기검색어1위" class="num1"></i><a href="javascript:clickSearch('%EC%97%B0%EC%86%8D%EC%A7%80%EC%A0%81%EB%8F%84');" title="인기검색어 연속지적도 새창열림">연속지적도</a><span>474,796</span></li><li><i title="인기검색어2위" class="num2"></i><a href="javascript:clickSearch('%EC%A7%80%EC%A0%81%EB%8F%84');" title="인기검색어 지적도 새창열림">지적도</a><span>113,348</span></li><li><i title="인기검색어3위" class="num3"></i><a href="javascript:clickSearch('%EC%88%98%EC%B9%98%EC%A7%80%ED%98%95%EB%8F%84');" title="인기검색어 수치지형도 새창열림">수치지형도</a><span>57,113</span></li><li><i title="인기검색어4위" class="num4"></i><a href="javascript:clickSearch('%EC%9A%A9%EB%8F%84%EC%A7%80%EC%97%AD');" title="인기검색어 용도지역 새창열림">용도지역</a><span>36,132</span></li><li><i title="인기검색어5위" class="num5"></i><a href="javascript:clickSearch('%ED%96%89%EC%A0%95%EA%B5%AC%EC%97%AD');" title="인기검색어 행정구역 새창열림">행정구역</a><span>24,633</span></li><li><i title="인기검색어6위" class="num6"></i><a href="javascript:clickSearch('%EB%8F%84%EB%A1%9C');" title="인기검색어 도로 새창열림">도로</a><span>24,458</span></li><li><i title="인기검색어7위" class="num7"></i><a href="javascript:clickSearch('%EC%97%B0%EC%86%8D%EC%A7%80%EC%A0%81');" title="인기검색어 연속지적 새창열림">연속지적</a><span>15,338</span></li><li><i title="인기검색어8위" class="num8"></i><a href="javascript:clickSearch('%EA%B5%AD%ED%86%A0%EA%B3%84%ED%9A%8D');" title="인기검색어 국토계획 새창열림">국토계획</a><span>15,295</span></li><li><i title="인기검색어9위" class="num9"></i><a href="javascript:clickSearch('%EC%97%B0%EC%86%8D%EC%A3%BC%EC%A0%9C');" title="인기검색어 연속주제 새창열림">연속주제</a><span>10,451</span></li><li><i title="인기검색어10위" class="num10"></i><a href="javascript:clickSearch('%ED%96%89%EC%A0%95%EA%B2%BD%EA%B3%84');" title="인기검색어 행정경계 새창열림">행정경계</a><span>8,915</span></li></ol>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="scetion1_coreservice_right cf">
+
+					<div class="article left market">
+						<h2 class="tit02 type1">
+							<a href="http://data.nsdi.go.kr/dataset" target="_blank" title="오픈마켓" class="tit02 type1">오픈마켓</a>
+						</h2>
+						<p class="exp">
+							국가, 공공 및 민간에서 생산된 공간정보를 확인하실 수<br> 있습니다.
+						</p>
+						<div class="article_inbox cf">
+							<div class="tra_mg_box">
+								<img src="project_files/top_icon_openmarket.png" alt=" ">
+							</div>
+							<!-- <div class="rankdown_box"> -->
+							<div class="article_con rankdown_box">
+								<ul class="rankdown_list">
+									<li><a href="http://data.nsdi.go.kr/dataset/12771" target="_blank" title="연속지적_전국"> <span class="num">1</span>
+														<span class="rankdown_txt">연속지적_전국</span>
+												</a></li>
+											<li><a href="http://data.nsdi.go.kr/dataset/20190710ds00002" target="_blank" title="수치지형도v1.0(1:5000)"> <span class="num">2</span>
+														<span class="rankdown_txt">수치지형도v1.0(1:5000)</span>
+												</a></li>
+											<li><a href="http://data.nsdi.go.kr/dataset/20190710ds00004" target="_blank" title="수치지형도v2.0(1:5000)"> <span class="num">3</span>
+														<span class="rankdown_txt">수치지형도v2.0(1:5000)</span>
+												</a></li>
+											<li><a href="http://data.nsdi.go.kr/dataset/20180222ds00008" target="_blank" title="연속지적_경기"> <span class="num">4</span>
+														<span class="rankdown_txt">연속지적_경기</span>
+												</a></li>
+											<li><a href="http://data.nsdi.go.kr/dataset/12665" target="_blank" title="(연속주제)_국토계획/교통시설"> <span class="num">5</span>
+														<span class="rankdown_txt">(연속주제)_국토계획/교통시...</span>
+												</a></li>
+											</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="article left api">
+						<h2 class="tit02 type1">
+							<a href="http://www.nsdi.go.kr/lxportal/?menuno=4077" title="오픈API" class="tit02 type1">오픈API</a>
+						</h2>
+						<p class="exp">
+							국가공간정보의 개방, 공유, 참여를 통해 어플리케이션을<br> 개발할 수 있도록 기술과 서비스를 공유하는
+							시스템입니다.
+						</p>
+						<div class="article_inbox cf">
+							<div class="tra_mg_box">
+								<img src="project_files/top_icon_api.png" alt=" ">
+							</div>
+							<div class="article_con">
+								<ul class="rankdown_list">
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2790" class="bul type1" title="오픈API목록"> 오픈API목록 <span class="rankdown_txt"> <i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i>
+										</span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2790" class="bul type1" title="국가공간정보포털API"> 국가공간정보포털API <span class="rankdown_txt"> <i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i>
+										</span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4078" target="_blank" class="bul type1" title="LX맵API">
+											LX맵API <span class="rankdown_txt"> <i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i>
+										</span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4080" target="_blank" class="bul type1" title="도로명주소안내도API">
+											도로명주소안내도API <span class="rankdown_txt"> <i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i>
+										</span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4079" target="_blank" class="bul type1" title="국가중점데이터API">
+											국가중점데이터API <span class="rankdown_txt"> <i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i>
+										</span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+					<div class="article left rest">
+						<h2 class="tit02 type1">부동산서비스</h2>
+						<p class="exp" style="color: #ffffff;">
+							부동산중개업 및 개발업 조회서비스는 전국 각 지자체에<br>등록된 부동산중개업소와 부동산개발업 관련 정보를<br>
+							조회할 수 있는 서비스입니다.
+						</p>
+						<ul class="choice type1 cf">
+							<li class="tab-li2 on">
+								<p>부동산중개업</p> <a href="http://www.nsdi.go.kr/lxportal/?menuno=4085" title="부동산중개업 바로가기"> <img src="project_files/arrow-right.png" alt="부동산중개업 바로가기">
+							</a>
+							</li>
+							<li class="tab-li2">
+								<p>부동산개발업</p> <a href="http://www.nsdi.go.kr/lxportal/?menuno=4083" title="부동산개발업 바로가기"> <img src="project_files/arrow-right.png" alt="부동산개발업 바로가기">
+							</a>
+							</li>
+						</ul>
+						</div>
+
+					<div class="article left map">
+						<h2 class="tit02 type1">
+							<a href="http://www.nsdi.go.kr/lxportal/?menuno=2888" target="_blank" title="지도서비스" class="tit02 type1">지도서비스</a>
+						</h2>
+						<p class="exp">
+							LX맵, 수치지형도, 비행안전 및<br> LOD(Linked Open-Data) 등의 서비스를
+							지도서비스에서 확인하실 수 있습니다.
+						</p>
+						<div class="article_inbox cf">
+							<div class="tra_mg_box">
+								<img src="project_files/top_icon_map.png" alt=" ">
+							</div>
+							<div class="article_con">
+								<ul class="service_list">
+									<li><a href="http://www.nsdi.go.kr/lxmap/?flag=30" target="_blank" class="bul type1" title="지도검색"> 지도검색 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxmap/?flag=99" target="_blank" class="bul type1" title="수치지형도"> 수치지형도 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxmap/?flag=60" target="_blank" class="bul type1" title="개방데이터셋"> 개방데이터셋 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxmap/?flag=101" target="_blank" class="bul type1" title="비행안전"> 비행안전 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true" style="color: #BDBDBD"></i></span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				<div class="article left know">
+						<h2 class="tit02 type1">
+							<a href="http://www.nsdi.go.kr/lxportal/?menuno=4055" target="_blank" title="공간정보전문지식" class="tit02 type1">공간정보전문지식</a>
+						</h2>
+						<p class="exp">
+							사용자와 공간정보 전문가와의 지식교류 서비스를<br> 제공합니다.
+						</p>
+						<div class="article_inbox cf">
+							<div class="tra_mg_box">
+								<img src="project_files/top_icon_knowledge.png" alt=" ">
+							</div>
+							<div class="article_con">
+								<ul class="service_list">
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4055" target="_blank" class="bul type1" title="LOD전문지식"> LOD전문지식
+											<span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2755" target="_blank" class="bul type1" title="공간정보용어사전">
+											공간정보용어사전 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4025&amp;devAct=e_List" target="_blank" class="bul type1" title="공간정보컬럼"> 공간정보컬럼 <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></span>
+									</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4025&amp;devAct=c_List" target="_blank" class="bul type1" title="전문가iN"> 전문가iN <span style="float: right;"><i class="fa fa-caret-square-o-right" aria-hidden="true"></i></span>
+									</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="article left listsear">
+						<h2 class="tit02 type1">공간정보검색</h2>
+						<p class="exp">
+							국토교통부에서 매년 조사하는 국가공간정보목록과<br> 국가공간포털에서 제공하는 공간정보를 확인할 수<br>
+							있습니다.
+						</p>
+						<div class="article_inbox cf">
+							<div class="tra_mg_box">
+								<img src="project_files/top_icon_search.png" alt=" ">
+							</div>
+							<div class="article_con">
+								<ul class="service_list">
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4069" class="bul type1" title="공간정보목록정보">공간정보목록정보</a></li>
+									<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=4072" class="bul type1" title="국가공간정보포털개방목록">국가공간정보포털개방목록</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!-- //scetion1_coreservice cf -->
+
+			<div class="scetion2">
+				<div class="scetion2_top">
+					<div class="scetion2_top_left">
+						<h3 class="blind">조회서비스</h3>
+						<div class="inquiry_article">
+							<ul class="mix_list type1">
+								<li><img src="project_files/f_logo.png" style="width: 45px; height: 45px; margin: 0px 15px 0px 0px;" alt="">
+									<div class="mix_con">
+										<strong><a href="http://gisbig.nsdi.go.kr/portal/index.jsp" target="_blank" title="공간빅데이터분석플랫폼" class="bul type1 st1">공간빅데이터 분석 플랫폼</a></strong>
+										<p>
+											<a href="http://gisbig.nsdi.go.kr/portal/index.jsp" target="_blank" title="국토교통부 공간빅데이터분석플랫폼으로 이동합니다.">국토교통부 공간빅데이터 분석<br>
+												플랫폼으로 이동합니다.
+											</a>
+										</p>
+									</div></li>
+									
+								<li><img src="project_files/h1.png" style="width: 45px; height: 43px; margin: 0px 15px 0px 0px;" alt="">
+									<div class="mix_con">
+										<strong><a href="http://map.ngii.go.kr/mn/mainPage.do" target="_blank" title="국토정보플랫폼" class="bul type1 st1">국토정보플랫폼</a></strong>
+										<p>
+											<a href="http://map.ngii.go.kr/mn/mainPage.do" target="_blank" title="국토지리정보원 국토정보플랫폼으로 이동합니다.">국토지리정보원 국토정보플랫폼 <br>
+												으로 이동합니다.
+											</a>
+										</p>
+									</div></li>
+									<!-- 
+								<li><img
+									src="https://kras.go.kr:444/img/logo/titimg.png"
+									style="width: 65px; height: 35px; object-fit: cover; object-position: 0 0px; margin: 0px 0px 0px -5px;"
+									alt="" />
+									<div class="mix_con">
+										<strong><a
+											href="https://kras.go.kr:444/cmmmain/goMainPage.do"
+											target="_blank" title="부동산종합공부시스템" class="bul type1 st1">부동산종합공부시스템</a></strong>
+										<p>
+											<a href="https://kras.go.kr:444/cmmmain/goMainPage.do"
+												target="_blank" title="부동산종합공부시스템으로 이동합니다.">부동산종합공부시스템으로<br />
+												이동합니다.
+											</a>
+										</p>
+									</div></li>
+									 -->
+								<li><img src="project_files/vworld.png" style="width: 140px; height: 37px; object-fit: cover; object-position: 0 0px; margin: 0px 0px 0px -15px;" alt="">
+									<div class="mix_con" style="width: 75%; margin-left: 67px;">
+										<p>
+											<a href="http://map.vworld.kr/map/maps.do" target="_blank" title="공간정보산업진흥원 공간정보오픈플랫폼으로 이동합니다.">공간정보산업진흥원 공간정보<br>오픈플랫폼으로 이동합니다.
+											</a>
+										</p>
+									</div></li>
+							</ul>
+						</div>
+						<div>
+							<ul class="pz_list" id="IntroList"><li id="ulBn1" class=""><a href="http://www.mpm.go.kr/proactivePublicService/" target="_blank"><img src="project_files/header_logo2.jpg" alt="적극행정 통합 플랫폼"></a></li><li id="ulBn2" class="Hidden"><a href="http://libs.lx.or.kr/" target="_blank"><img src="project_files/header_logo.png" alt="국토인터넷방송국"></a></li>
+						</ul>
+						<ul>
+							<li class="type">
+								<em class="count pz_btn"> 
+									<a href="http://libs.lx.or.kr/" class="prev" onclick="RP_num.previous();return false;"><span class="Hidden">알림판 이전</span></a>
+									<a href="http://libs.lx.or.kr/" class="stop" id="btnPause" onclick="pause('btnPause','btnPlay');return false;" style="display: block;"><span class="Hidden">알림판 정지</span></a>
+									<a href="http://libs.lx.or.kr/" class="play" id="btnPlay" onclick="pause('btnPlay','btnPause');return false;" style="display: none;"><span class="Hidden">알림판 시작</span></a> 
+									<a href="http://libs.lx.or.kr/" class="next" onclick="RP_num.next();return false;"><span class="Hidden">알림판 다음</span></a>
+						       </em> 
+							</li>
+						</ul>
+						</div>
+					</div>
+					<div class="scetion2_top_center">
+									<div class="case_article">
+										<div class="case_control cf">
+											<div class="case_category_box">
+												<ul class="tablist case_category cf" role="tablist">
+													<li class="tab-li on" style="width: 33%;" role="tab" aria-controls="tab-panel1" tabindex="0" aria-selected="true">
+														<a href="http://www.nsdi.go.kr/lxportal/?menuno=4009" title="공간인포그래픽" tabindex="-1">공간인포그래픽</a></li>
+													<li class="tab-li" style="width: 33%;" role="tab" aria-controls="tab-panel2">
+														<a href="http://www.nsdi.go.kr/lxportal/?menuno=4075" title="나만의주제도만들기" tabindex="-1">나만의주제도만들기</a></li>
+													<li class="tab-li" style="width: 34%;" role="tab">
+														<a href="http://hall.nsdi.go.kr/?cat=67" target="_blank" title="공간활용우수사례 새창열림" tabindex="-1">공간활용우수사례</a></li>
+												</ul>
+											</div>
+										</div>
+										<div class="case_con_wrap">
+											<div class="tabpanel case_con_container" id="tab-panel1" role="tabpanel">
+												<!-- 공간인포그래픽 -->
+												<h3 class="blind">공간인포그래픽 리스트입니다.</h3>
+												<ul class="w_list type2 main">
+													<li>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(129);" class="blocklink" title="경기도_파주시_아프리카돼지열병방역초소현황">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20200217041548653_3682.0.PNG" class="thum117_87" alt="경기도_파주시_아프리카돼지열병방역초소현황 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(129);" title="경기도_파주시_아프리카돼지열병방역초소현황 새창열림">경기도_파주시_아프리카돼지열병...</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2020-01-20</em></li>
+																			<li>조회수<em class="ff_th hits">3,184</em></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(67);" class="blocklink" title="평창올림픽대회지원/특별구역">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20180227064202253_7826.0.png" class="thum117_87" alt="평창올림픽대회지원/특별구역 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(67);" title="평창올림픽대회지원/특별구역 새창열림">평창올림픽대회지원/특별구역</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2018-02-06</em></li>
+																			<li>조회수<em class="ff_th hits">1,949</em></li>
+																		</ul>
+																	</div>
+																</div>
+																</li>
+																<li>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(57);" class="blocklink" title="분기별 토지이동 현황으로 알아보는 우리나라 토지거래 시장동향(서울시)">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20171129100709329_8929.0.png" class="thum117_87" alt="분기별 토지이동 현황으로 알아보는 우리나라 토지거래 시장동향(서울시) 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(57);" title="분기별 토지이동 현황으로 알아보는 우리나라 토지거래 시장동향(서울시) 새창열림">분기별 토지이동 현황으로 알아...</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2017-11-28</em></li>
+																			<li>조회수<em class="ff_th hits">2,622</em></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(56);" class="blocklink" title="토지이동현황통계2016">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20171129101529312_2403.0.jpg" class="thum117_87" alt="토지이동현황통계2016 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(56);" title="토지이동현황통계2016 새창열림">토지이동현황통계2016</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2017-11-27</em></li>
+																			<li>조회수<em class="ff_th hits">3,877</em></li>
+																		</ul>
+																	</div>
+																</div>
+																</li>
+																</ul>
+											</div>
+											<div class="tabpanel case_con_container" id="tab-panel2" role="tabpanel">
+												<!-- 사용자주제도 -->
+												<h3 class="blind">나만의주제도 리스트입니다.</h3>
+												<ul class="w_list type2 main">
+													<li>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(268);" class="blocklink" title="의정부 공감지도 만들기">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20221104053350931_4868.0.jpg" class="thum117_87" alt="의정부 공감지도 만들기 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(268);" title="의정부 공감지도 만들기 새창열림">의정부 공감지도 만들기</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2022-11-04</em></li>
+																			<li>조회수<em class="ff_th hits">551</em></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(249);" class="blocklink" title="하천경계">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20220210030007902_7053.0.jpg" class="thum117_87" alt="하천경계 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(249);" title="하천경계 새창열림">하천경계</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2022-02-10</em></li>
+																			<li>조회수<em class="ff_th hits">963</em></li>
+																		</ul>
+																	</div>
+																</div>
+																</li>
+																<li>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(246);" class="blocklink" title="전국도서관개수">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20211231091904827_7492.0.jpg" class="thum117_87" alt="전국도서관개수 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(246);" title="전국도서관개수 새창열림">전국도서관개수</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2021-12-31</em></li>
+																			<li>조회수<em class="ff_th hits">997</em></li>
+																		</ul>
+																	</div>
+																</div>
+																<div class="w_list_inbox type1">
+																	<a href="#none" onclick="popupView(245);" class="blocklink" title="전국도시공원개수">
+																		<div class="tra_mg thum117_87">
+																			<img src="project_files/20211230113252022_5463.0.jpg" class="thum117_87" alt="전국도시공원개수 새창열림">
+																		</div>
+																	</a>
+																	<div class="w_list_con">
+																		<strong class="tit_name type1"> <a href="#none" onclick="popupView(245);" title="전국도시공원개수 새창열림">전국도시공원개수</a>
+																		</strong>
+																		<ul class="ico_list type1 main">
+																			<li>등록일<em class="ff_th date">2021-12-30</em></li>
+																			<li>조회수<em class="ff_th hits">784</em></li>
+																		</ul>
+																	</div>
+																</div>
+																</li>
+																</ul>
+											</div>
+										</div>
+									</div>
+									<div class="tabpanel community_article">
+										<div class="cafe_box">
+											<h3 class="tit03 type1">공간카페</h3>
+											<div class="community_con cafe">
+												<img src="project_files/middle_icon_cafe.png" alt="">
+												<p class="con_txt">
+													공간정보를 이용하여 사용자 <br> 커뮤니티 형성 및 다양한 정보를 <br> 공유할 수 있는
+													공간입니다.
+												</p>
+											</div>
+											<div style="margin-left: 75px;">
+												<span class="btn bot"><a href="http://www.nsdi.go.kr/lxportal/?menuno=4059" target="_blank" class="type1" title="공간카페">바로가기</a></span>
+											</div>
+										</div>
+										<div class="profe_box">
+											<h3 class="tit03 type1">공간정보전문지식</h3>
+											<div class="community_con">
+												<img src="project_files/middle_icon_intellec.png" alt="">
+												<p class="con_txt">
+													사용자와 공간정보 전문가와의 <br> 지식교류 서비스로, 공간정보 <br> 전문가가 답변을
+													드립니다.
+												</p>
+											</div>
+											<div>
+												<span class="btn bot"><a href="http://www.nsdi.go.kr/lxportal/?menuno=4055" target="_blank" class="type1" title="공간정보전문지식">바로가기</a></span>
+											</div>
+										</div>
+									</div>
+								</div>
+									<div class="scetion2_top_right">
+									 <div class="statis_article" style="position:relative;">
+										<h3 class="tit03 type3">
+											<a href="http://www.nsdi.go.kr/lxportal/?menuno=4088" title="내토지찾기" style="color: #ffffff; font-size: 14px;">토지찾기서비스 (헬프데스크 : <span style="font-size: 16px;">1899 - 6523</span>)</a>
+										</h3>
+										<div style="position: absolute; bottom: 15px; width: 100%; text-align: center;">
+	 										<a style="" title="내토지찾기서비스 바로가기(새창열림)" href="javascript:openLink('getMyLadFind.do');">
+												<span style="color: white; background-color: #359ade; border-radius: 10px; padding: 8px 25px 8px 25px; font-size: 16px; font-weight: bold; ">내토지찾기</span>
+											</a>
+	 										<a style="" title="조상땅찾기서비스 바로가기(새창열림)" href="javascript:openLink('getAncLadFind.do');">
+												<span style="color: white; background-color: #00AD00; border-radius: 10px; padding: 8px 25px 8px 25px; font-size: 16px; font-weight: bold; ">조상땅찾기</span>
+											</a>
+										</div>
+										<img src="project_files/right_banner_seereal.png" alt="내토지찾기" class="imgbrder" style="border-radius: 0 0 10px 10px;">
+									</div>
+									<div class="inquiry_article_r">
+										<ul class="mix_list type1">
+											<li>
+												<img src="project_files/right_icon_promotion.png" alt=" ">
+												<div class="mix_con">
+													<strong><a href="http://www.nsdi.go.kr/lxportal/?menuno=4058" target="_blank" title="공간정보홍보관" class="bul type1 st1">공간정보홍보관</a></strong>
+													<p>
+														<a href="http://www.nsdi.go.kr/lxportal/?menuno=4058" target="_blank" title="공간정보홍보관" class="bul type1 st1">공간정보상품
+															등 활용사례 소개</a>
+													</p>
+												</div></li>
+											<li>
+												<img src="project_files/right_icon_academy.png" alt=" ">
+												<div class="mix_con">
+													<strong><a href="https://lxsiedu.or.kr/" style="cursor: pointer;" title="공간정보아카데미" class="bul type1 st1">공간정보아카데미</a></strong>
+													<p>
+														<a href="https://lxsiedu.or.kr/" style="cursor: pointer;" title="공간정보아카데미" class="bul type1 st1">재직자 직무향상 및 취업자 과정 운영</a>
+													</p>
+												</div></li>
+											<li>
+												<img src="project_files/right_icon_platform.png" alt=" ">
+												<div class="mix_con">
+													<strong><a href="javascript:fn_goCloud();" style="cursor: pointer;" title="공간정보 개발지원플랫폼(새창열림)" class="bul type1 st1">공간정보 개발지원플랫폼</a></strong>
+													<p>
+														<a href="javascript:fn_goCloud();" style="cursor: pointer;" title="공간정보 개발지원플랫폼(새창열림)" class="bul type1 st1">공간정보 데이터셋 및 개발환경 제공</a>
+													</p>
+
+												</div></li>
+										</ul>
+									</div>
+								</div>
+						</div>
+				<div class="scetion2_bot">
+					<div class="refer_article">
+						<div class="tab_box type2">
+							<ul class="tabmenu type1 cf tablist" role="tablist">
+								<li class="tab-li0 on" tabindex="0" role="tab" aria-controls="tab-panel01" aria-selected="true">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2982" title="보도자료" tabindex="-1">보도자료</a></li>
+								<li class="tab-li0" role="tab" aria-controls="tab-panel02">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2772&amp;cateIndex=637" title="정책자료" tabindex="-1">정책자료</a></li>
+								<li class="tab-li0" role="tab" aria-controls="tab-panel03">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2772&amp;cateIndex=712" "="" title="유통자료" tabindex="-1">유통자료</a></li>
+								<li class="tab-li0" role="tab" aria-controls="tab-panel04">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2772&amp;cateIndex=638" title="표준자료" tabindex="-1">표준자료</a></li>
+							</ul>
+						</div>
+						<div class="tab_list_box main">
+							<h3 class="blind">보도자료 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel01" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3407&amp;boardno=596&amp;siteno=18&amp;act=view" title="국토부-해수부, 미등록 무인섬 관리 협업 체계 강화"><span class="dote">·</span> <span class="list_txt">국토부-해수부, 미등록 무인섬 관리 협업 체계 강화</span><span class="date">2022-07-28</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3408&amp;boardno=596&amp;siteno=18&amp;act=view" title="240개 공공기관이 보유한 공간정보 목록 개방"><span class="dote">·</span> <span class="list_txt">240개 공공기관이 보유한 공간정보 목록 개방</span><span class="date">2022-07-27</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3406&amp;boardno=596&amp;siteno=18&amp;act=view" title="토지소유자 주소 달라도 토지합병 가능해진다"><span class="dote">·</span> <span class="list_txt">토지소유자 주소 달라도 토지합병 가능해진다</span><span class="date">2022-07-17</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3405&amp;boardno=596&amp;siteno=18&amp;act=view" title="우리나라 전체 인구의 35.8%가 토지 소유"><span class="dote">·</span> <span class="list_txt">우리나라 전체 인구의 35.8%가 토지 소유</span><span class="date">2022-07-04</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3404&amp;boardno=596&amp;siteno=18&amp;act=view" title="‘관로탐지기’ 성능검사대행업 등록이 쉬워진다"><span class="dote">·</span> <span class="list_txt">‘관로탐지기’ 성능검사대행업 등록이 쉬워진다</span><span class="date">2022-05-31</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2982&amp;bbsno=3403&amp;boardno=596&amp;siteno=18&amp;act=view" title="공간정보 융복합 혁신인재 양성 확대"><span class="dote">·</span> <span class="list_txt">공간정보 융복합 혁신인재 양성 확대</span><span class="date">2022-05-02</span></a></li>
+										</ul>
+							<h3 class="blind">정책자료 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel02" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=846&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.12월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.12월 전국주택가격동향조사 결과공표...</span><span class="date">2022-01-14</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=839&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.11월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.11월 전국주택가격동향조사 결과공표...</span><span class="date">2021-12-15</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=838&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.10월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.10월 전국주택가격동향조사 결과공표...</span><span class="date">2021-11-15</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=837&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.9월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.9월 전국주택가격동향조사 결과공표」</span><span class="date">2021-10-14</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=836&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.8월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.8월 전국주택가격동향조사 결과공표」</span><span class="date">2021-09-15</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=637&amp;bbsno=835&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="한국부동산원 「’21.7월 전국주택가격동향조사 결과공표」"><span class="dote">·</span> <span class="list_txt">한국부동산원 「’21.7월 전국주택가격동향조사 결과공표」</span><span class="date">2021-08-17</span> </a></li>
+										</ul>
+ 							<h3 class="blind">유통자료 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel03" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=635&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="대용량 CSV 파일 분할 exe - Free Huge CSV Splitter"><span class="dote">·</span> <span class="list_txt">대용량 CSV 파일 분할 exe - Free Huge CSV Splitter</span><span class="date">2019-03-18</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=615&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[지도서비스]분석지도 매뉴얼"><span class="dote">·</span> <span class="list_txt">[지도서비스]분석지도 매뉴얼</span><span class="date">2018-12-12</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=623&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="토지특성도 - 분류항목"><span class="dote">·</span> <span class="list_txt">토지특성도 - 분류항목</span><span class="date">2018-07-10</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=586&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="국토지리정보원_토지이용현황도 분류항목 및 코드"><span class="dote">·</span> <span class="list_txt">국토지리정보원_토지이용현황도 분류항목 및 코드</span><span class="date">2018-06-19</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=579&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="행정기관코드 및 법정동코드 조회 방법"><span class="dote">·</span> <span class="list_txt">행정기관코드 및 법정동코드 조회 방법</span><span class="date">2018-05-31</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=712&amp;bbsno=578&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="국가중점 개방데이터 CSV파일 활용 매뉴얼"><span class="dote">·</span> <span class="list_txt">국가중점 개방데이터 CSV파일 활용 매뉴얼</span><span class="date">2018-05-21</span></a></li>
+										</ul>
+							<h3 class="blind">표준자료 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel04" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=831&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[표준목록] OGC 표준 제개정 현황(2021. 4. 30.기준)"><span class="dote">·</span> <span class="list_txt">[표준목록] OGC 표준 제개정 현황(2021. 4. 30.기준)</span><span class="date">2021-04-30</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=830&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[표준목록] ISO 표준 제개정 현황(2021. 4. 30.기준)"><span class="dote">·</span> <span class="list_txt">[표준목록] ISO 표준 제개정 현황(2021. 4. 30.기준)</span><span class="date">2021-04-30</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=829&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[표준목록] KS 표준 제개정 현황(2021. 4. 30.기준)"><span class="dote">·</span> <span class="list_txt">[표준목록] KS 표준 제개정 현황(2021. 4. 30.기준)</span><span class="date">2021-04-30</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=828&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[국제활동] 국제표준기구(OGC) 제118차 총회 결과보고서"><span class="dote">·</span> <span class="list_txt">[국제활동] 국제표준기구(OGC) 제118차 총회 결과보고서</span><span class="date">2021-04-20</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=826&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[표준목록] OGC 표준 제개정 현황(2021. 3. 31.기준)"><span class="dote">·</span> <span class="list_txt">[표준목록] OGC 표준 제개정 현황(2021. 3. 31.기준)</span><span class="date">2021-04-01</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2772&amp;cateIndex=638&amp;bbsno=825&amp;boardno=552&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTUyIiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="[표준목록] ISO 표준 제개정 현황(2021. 3. 31.기준)"><span class="dote">·</span> <span class="list_txt">[표준목록] ISO 표준 제개정 현황(2021. 3. 31.기준)</span><span class="date">2021-04-01</span> </a></li>
+										</ul>
+						</div>
+					</div>
+					<div class="notice_article">
+						<div class="tab_box type2">
+							<ul class="tabmenu type1 cf tablist" role="tablist">
+								<li class="tab-li1 on" tabindex="0" role="tab" aria-controls="tab-panel10" aria-selected="true">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2746" title="공지사항" tabindex="-1">공지사항</a></li>
+								<li class="tab-li1" role="tab" aria-controls="tab-panel11">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2787" title="Q&amp;A" tabindex="-1">Q&amp;A</a></li>
+								<li class="tab-li1" role="tab" aria-controls="tab-panel12">
+									<a href="http://www.nsdi.go.kr/lxportal/?menuno=2786" title="FAQ" tabindex="-1">FAQ</a></li>
+							</ul>
+						</div>
+						<div class="tab_list_box main">
+							<!-- 공지사항 -->
+							<h3 class="blind">공지사항 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel10" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1065&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="국가공간정보포털 서비스 통합 안내"><span class="dote">·</span> <span class="list_txt">국가공간정보포털 서비스 통합 안내</span><span class="date">2023-02-28</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1064&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="2023년도 LX 산학협력 R&amp;D사업 통합공고"><span class="dote">·</span> <span class="list_txt">2023년도 LX 산학협력 R&amp;D사업 통합공고</span><span class="date">2023-01-31</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1063&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="2022년 제2회 공간정보활용 경진대회 서면심사 결과 발표"><span class="dote">·</span> <span class="list_txt">2022년 제2회 공간정보활용 경진대회 서...</span><span class="date">2022-10-17</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1062&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="제7회 공간정보 활용 창업 아이디어 공모전 개최 안내"><span class="dote">·</span> <span class="list_txt">제7회 공간정보 활용 창업 아이디어 공모...</span><span class="date">2022-09-30</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1061&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="2022 공간정보 활용 경진대회 개최 안내"><span class="dote">·</span> <span class="list_txt">2022 공간정보 활용 경진대회 개최 안내</span><span class="date">2022-09-05</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2746&amp;bbsno=1060&amp;boardno=545&amp;ztag=rO0ABXQAMDxjYWxsIHR5cGU9ImJvYXJkIiBza2luPSJmcmVlIiBubz0iNTQ1IiA%2BPC9jYWxsPg%3D%3D&amp;siteno=18&amp;act=view" title="국토교통부 공간정보 서비스 품질향상 설문 이벤트 3.1 ~ 3.15 까지"><span class="dote">·</span> <span class="list_txt">국토교통부 공간정보 서비스 품질향상 설...</span><span class="date">2022-03-01</span></a></li>
+										</ul>
+							<!-- Q&A -->
+							<h3 class="blind">Q&amp;A 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel11" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3131&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="읍면동 api"><span class="dote">·</span> <span class="list_txt">읍면동 api</span><span class="date">2023-05-18</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3129&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="관리자님  저희 중개 사무소 대표번호 등록좀 부탁드립니다."><span class="dote">·</span> <span class="list_txt">관리자님  저희 중개 사무소 대표번호 등...</span><span class="date">2023-05-18</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3127&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="오픈마켓 연속지적 접속문의"><span class="dote">·</span> <span class="list_txt">오픈마켓 연속지적 접속문의</span><span class="date">2023-05-17</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3124&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="토지특성공간정보 용도지역코드 분류표가 궁금합니다"><span class="dote">·</span> <span class="list_txt">토지특성공간정보 용도지역코드 분류표가...</span><span class="date">2023-05-16</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3122&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="지하공간통합지도 이용문의"><span class="dote">·</span> <span class="list_txt">지하공간통합지도 이용문의</span><span class="date">2023-05-15</span></a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2787&amp;bbsno=3120&amp;boardno=551&amp;ztag=rO0ABXQALjxjYWxsIHR5cGU9ImJvYXJkIiBubz0iNTUxIiBza2luPSJxbmEiPjwvY2FsbD4&amp;siteno=18&amp;act=view" title="지적,도시선 미세한 좌표차이에 대해"><span class="dote">·</span> <span class="list_txt">지적,도시선 미세한 좌표차이에 대해</span><span class="date">2023-05-12</span></a></li>
+										</ul>
+							<!-- FAQ -->
+							<h3 class="blind">FAQ 리스트입니다.</h3>
+							<ul class="bul_list type1" id="tab-panel12" role="tabpanel">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=46&amp;checkVal=Y"><span class="txt">오픈소스 소프트웨어 QGIS를 사용한 연속...</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=45&amp;checkVal=Y"><span class="txt">국토지리정보원 등고선 데이터 정리(2022...</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=44&amp;checkVal=Y"><span class="txt">국토지리정보원 도로중심선 데이터 정리 ...</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=43&amp;checkVal=Y"><span class="txt">국토지리정보원 도로중심선 데이터 정리 ...</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=42&amp;checkVal=Y"><span class="txt">수문지질단위 데이터 코드값 상세 설명</span> </a></li>
+										<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=40&amp;checkVal=Y"><span class="txt">국토지리정보원 건물 데이터 정리(2020년...</span> </a></li>
+										</ul>
+						</div>
+					</div>
+					<div class="cus_article">
+						<div class="cus_banner">
+							<h3 class="cus_tit">헬프 데스크</h3>
+							<h6 class="cus_tit" style="font-size: 12px;">※ 국가공간정보포털 서비스
+								이용 문의</h6>
+							<strong class="tell">02-523-9768</strong>
+							<ul class="line_list type1">
+								<li><span class="col_type1">평일</span><em class="">09:00 ~ 18:00</em></li>
+								<li><span class="col_type1">점심</span><em class="">12:00 ~ 13:00</em></li>
+							</ul>
+						</div>
+						<div class="cus_quickmenu_box">
+							<ul class="cus_quickmenu cf">
+								<li><a href="http://www.nsdi.go.kr/lxportal/index.html?menuno=2786&amp;bbsno=&amp;checkVal=Y" class="ico_faq" title="FAQ">FAQ</a></li>
+								<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2787" class="ico_ana" title="Q&amp;A">Q&amp;A</a></li>
+								<li><a href="http://939.co.kr/" target="_blank" class="ico_cus">원격지원</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- //scetion2 -->
+
+		</div>
+		<!-- //inner_con -->
+		<!-- 
+		<ul class="main_sns">
+			<li><a href="javascript:goFace(location.href);" class="ico_facebook" title="페이스북 새창열림"><span class="blind">페이스북</span></a></li>
+			<li><a href="javascript:goTwitter(location.href);" class="ico_twit" title="트위터 새창열림"><span class="blind">트위터</span></a></li>
+			<li><a href="javascript:fnPrint();" class="ico_print" title="프린트"><span class="blind">프린트</span></a></li>
+		</ul>
+		 -->
+	</div>
+	<!-- //main_content -->
+
+	<div class="bgright"></div>
+</div>
+<!-- //wrap_main_content -->
+
+<div class="m-section5">
+	<div class="mFamSite">
+	<p class="btn_ctrl"> 
+		  <a id="bann-prev" href="#link" onclick="return false;"><img alt="이전" src="project_files/btn_bann_prev.gif"></a>
+		  <a id="bann-stop" href="#link" onclick="return false;"><img alt="멈춤" src="project_files/btn_bann_stop.gif"></a> 
+		  <a id="bann-next" href="#link" onclick="return false;"><img alt="다음" src="project_files/btn_bann_next.gif"></a>
+
+	</p>
+	<div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;"><div class="bx-viewport" style="width: 97%; overflow: hidden; position: relative; height: 52px;"><ul id="slider2" style="width: auto; position: relative; transition-duration: 0s; transform: translate3d(0px, -55.3667px, 0px);"><li style="float: none; list-style: none; position: relative; width: 1067px; margin-bottom: 4px;" class="bx-clone"><a href="https://data.iros.go.kr/" target="_blank" title="등기정보광장" tabindex="-1">
+				<img src="project_files/20210415053120656_5102.0.png" alt="등기정보광장">
+			</a> 
+			</li>
+		<li style="float: none; list-style: none; position: relative; width: 1067px; margin-bottom: 4px;"><a href="http://www.molit.go.kr/portal.do" target="_blank" title="국토교통부">
+				<img src="project_files/20160329050252921_9384.0.gif" alt="국토교통부">
+			</a> 
+			<a href="http://www.lx.or.kr/" target="_blank" title="한국국토정보공사">
+				<img src="project_files/20160121095636624_3074.0.gif" alt="한국국토정보공사">
+			</a> 
+			<a href="http://www.ngii.go.kr/" target="_blank" title="국토지리정보원">
+				<img src="project_files/20200821054126463_6095.0.png" alt="국토지리정보원">
+			</a> 
+			<a href="http://luris.molit.go.kr/" target="_blank" title="LURIS 토지이용규제정보서비스">
+				<img src="project_files/20200821054126487_3692.0.png" alt="LURIS 토지이용규제정보서비스">
+			</a> 
+			<a href="https://stat.molit.go.kr/" target="_blank" title="국토교통부 통계누리">
+				<img src="project_files/20200821054126502_142.0.png" alt="국토교통부 통계누리">
+			</a> 
+			<a href="https://www.data.go.kr/" target="_blank" title="공공데이터포털">
+				<img src="project_files/20160121095636631_2319.0.gif" alt="공공데이터포털">
+			</a> 
+			</li><li style="float: none; list-style: none; position: relative; width: 1067px; margin-bottom: 4px;"><a href="http://www.ksis.or.kr/" target="_blank" title="KSIS 한국공간정보학회">
+				<img src="project_files/20200821054126520_350.0.png" alt="KSIS 한국공간정보학회">
+			</a> 
+			<a href="http://www.lh.or.kr/" target="_blank" title="LH공사">
+				<img src="project_files/20200821054126541_3690.0.png" alt="LH공사">
+			</a> 
+			<a href="http://www.spacen.or.kr/main.do" target="_blank" title="SPACE 공간정보산업진흥원">
+				<img src="project_files/20160121095636643_3023.0.gif" alt="SPACE 공간정보산업진흥원">
+			</a> 
+			<a href="http://map.ngii.go.kr/" target="_blank" title="국토정보플랫폼">
+				<img src="project_files/20200821054126549_3083.0.png" alt="국토정보플랫폼">
+			</a> 
+			<a href="http://www.krihs.re.kr/" target="_blank" title="국토연구원">
+				<img src="project_files/20160121095636646_3816.0.gif" alt="국토연구원">
+			</a> 
+			<a href="http://www.kasm.or.kr/main.do" target="_blank" title="공간정보산업협회">
+				<img src="project_files/20200821054126561_4407.0.png" alt="공간정보산업협회">
+			</a> 
+			</li><li style="float: none; list-style: none; position: relative; width: 1067px; margin-bottom: 4px;"><a href="https://data.iros.go.kr/" target="_blank" title="등기정보광장">
+				<img src="project_files/20210415053120656_5102.0.png" alt="등기정보광장">
+			</a> 
+			</li><li style="float: none; list-style: none; position: relative; width: 1067px; margin-bottom: 4px;" class="bx-clone"><a href="http://www.molit.go.kr/portal.do" target="_blank" title="국토교통부" tabindex="-1">
+				<img src="project_files/20160329050252921_9384.0.gif" alt="국토교통부">
+			</a> 
+			<a href="http://www.lx.or.kr/" target="_blank" title="한국국토정보공사" tabindex="-1">
+				<img src="project_files/20160121095636624_3074.0.gif" alt="한국국토정보공사">
+			</a> 
+			<a href="http://www.ngii.go.kr/" target="_blank" title="국토지리정보원" tabindex="-1">
+				<img src="project_files/20200821054126463_6095.0.png" alt="국토지리정보원">
+			</a> 
+			<a href="http://luris.molit.go.kr/" target="_blank" title="LURIS 토지이용규제정보서비스" tabindex="-1">
+				<img src="project_files/20200821054126487_3692.0.png" alt="LURIS 토지이용규제정보서비스">
+			</a> 
+			<a href="https://stat.molit.go.kr/" target="_blank" title="국토교통부 통계누리" tabindex="-1">
+				<img src="project_files/20200821054126502_142.0.png" alt="국토교통부 통계누리">
+			</a> 
+			<a href="https://www.data.go.kr/" target="_blank" title="공공데이터포털" tabindex="-1">
+				<img src="project_files/20160121095636631_2319.0.gif" alt="공공데이터포털">
+			</a> 
+			</li></ul></div></div>
+</div>
+
+
+<script src="project_files/jquery.bxSlider.min.js"></script> 
+<script>
+	//<![CDATA[
+	$(function(){
+		var $slider2 = $('#slider2').bxSlider({
+			mode: 'vertical', 
+			pause: '5000',
+			minSlides: 1, 
+			slideMargin: 4 ,
+			pager: false,
+			controls: false,
+			auto: true,
+			// 웹접근성 추가
+	
+			onSliderLoad: function(){
+				$(".bx-clone").find("a").prop("tabIndex","-1");
+			}
+		});
+
+		 $('#bann-prev').click(function(){
+			$slider2.goToPrevSlide();
+			$slider2.stopAuto();
+			$('#bann-stop').html('<img alt="재생" src="/lxportal/images/m-index/btn_bann_play.gif" />');
+			return false;
+		});
+
+		$('#bann-next').click(function(){
+			$slider2.goToNextSlide();
+			$slider2.stopAuto();
+			$('#bann-stop').html('<img alt="재생" src="/lxportal/images/m-index/btn_bann_play.gif" />');
+			return false;
+		});
+
+
+
+		 $('#bann-stop').click(function(){
+			var imgObj = $(this).find('img');
+			if( imgObj.attr('src').indexOf('bann_play') > 0 ){
+				$slider2.startAuto();
+				$(this).html('<img alt="멈춤" src="/lxportal/images/m-index/btn_bann_stop.gif" />');
+				return false;
+			}else{
+				$slider2.stopAuto();
+				$(this).html('<img alt="재생" src="/lxportal/images/m-index/btn_bann_play.gif" />');
+				return false;
+			}
+		}); 
+		 
+		// 웹 접근성
+		$('#slider2 a').focusin(function () {
+			$slider2.stopAuto();
+		});
+	});
+
+
+	// ]]>
+
+</script>
+</div>
+<!-- 컨텐츠완료 -->
+	</div>
+
+
+<div id="footer">
+			<div class="f_link">
+				<ul>
+					<li class="first"><a href="http://www.nsdi.go.kr/lxportal/?menuno=2793">이용약관</a> </li>
+					<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2794">개인정보처리방침</a> </li>
+					<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2795">저작권정책</a> </li>
+					<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2874">뷰어프로그램다운로드</a> </li>
+					<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2875">이메일무단수집거부</a></li>
+					<!--li><a href="#">RSS</a></li-->
+					<li><a href="http://www.nsdi.go.kr/lxportal/?menuno=2796">사이트맵</a></li>
+				
+					<!-- li><a href="#none">다운로드</a> </li-->
+					<!-- li>
+						<a href="#none"><img src="/images/common/icon/icon_rss01.gif" alt="RSS" / ></a>
+						<a href="#none"><img src="/images/common/icon/icon_rss02.gif" alt="RSS" / ></a>
+					</li-->
+				</ul>
+				
+				<div class="family_site">
+					
+					<div class="f_site">
+						<select id="familysite" name="familysite" class="familysite b_select" title="패밀리사이트">
+							<option selected="selected" value="">Family Site</option>
+							<option value="https://kras.go.kr:444/">일사편리</option>
+							<option value="https://www.spacein.kr/">공간정보교육포털</option>
+							<option value="http://map.ngii.go.kr/">국토정보플랫폼</option>
+							<option value="https://cloud.eais.go.kr/">세움터</option>
+							<option value="https://www.geoinfo.or.kr/">국토지반정보 통합DB센터</option>
+							<option value="http://www.river.go.kr/">하천관리지리정보시스템</option>
+							<option value="http://www.ktdb.go.kr/">국가교통DB</option>
+							<option value="http://www.fms.or.kr/">시설물통합정보관리시스템</option>
+							<option value="http://luris.molit.go.kr/">토지이용규제정보시스템</option>
+							<option value="http://seereal.lh.or.kr/main.do">씨:리얼</option>
+							<option value="http://coast.mof.go.kr/main.do">연안포털</option>
+							<option value="http://www.khoa.go.kr/">국립해양조사원</option>
+							<option value="https://njy.mafra.go.kr/main.do">농지공간포털</option>
+							<option value="http://www.kmrgis.net/">국가광물자원 지로정보망</option>
+							<option value="http://egis.me.go.kr/">환경공간정보서비스</option>
+							<option value="http://water.nier.go.kr/">물환경정보시스템</option>
+							<option value="http://www.safekorea.go.kr/">국민재난안전포털</option>
+							<option value="http://www.gis-heritage.go.kr/">문화재공간정보서비스</option>
+							<option value="http://fgis.forest.go.kr/">산림공간정보서비스</option>
+							<option value="https://sansatai.forest.go.kr/">산사태정보시스템</option>
+							<option value="http://sg.smba.go.kr/">상권정보시스템</option>
+							<option value="http://www.gicoms.go.kr/">해양안전종합정보시스템</option>
+						</select>
+						<img style="cursor:pointer;" src="project_files/btn_family.gif" id="goUrl" alt="해당 사이트로 이동 새창열림" tabindex="0">
+					</div>
+					<script> 
+						$(function(){
+							$("#goUrl").click(function(){
+								var url =  $("#familysite option:selected").val();
+								if(url != ""){
+									window.open(url); 
+								} else {
+									alert("패밀리사이트를 선택하세요");
+								}
+							});	
+							
+							$("#goUrl").keypress(function (e) {
+								var key = e.which;
+								if(key == 13) {
+									$("#goUrl").click();
+									return false;
+								}
+							});  
+						});
+					</script>			
+				</div>	
+			</div>
+			
+			<div class="f_area">
+				<h2><img src="project_files/f_logo.gif" alt="국토교통부"><img src="project_files/f_bi.png" alt="내일을 위한 정부혁신. 보다 나은 정부" style="width: 90px;"><img src="project_files/f_lx.gif" class="f_lx" alt="LX 한국국토정보공사"></h2>
+				<address>
+					54870/ 전라북도 전주시 덕진구 기지로 120 (중동) 한국국토정보공사/ 문의전화 02-523-9768 (평일 09:00~18:00, 점심시간 12:00~13:00)<br>
+					* 법원사실조회 등 확인문의는 (우)30103 세종특별자치시 도움6로 11 국토교통부 국가공간정보센터(3층)<br>
+					<!-- 본 페이지에 게시된 메일 주소가 자동수집되는 것을 거부하며, 이를 위반시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.<br /> -->
+					COPYRIGHT(C) Korea National Spatial Data Infrastructure Portal, ALL RIGHTS RESERVED.
+				</address>
+				<!-- 1안 평가원 인증현황 사이트로 링크 -->
+				<a href="http://www.wa.or.kr/board/list.asp?BoardID=0006" target="_blank">
+				<img class="wa" alt="(사)한국장애인단체총연합회 한국웹접근성인증평가원 웹접근성 우수사이트 인증마크(WA인증마크)" src="project_files/wa.png" width="124" height="85">
+				</a>
+				</div>
+		</div>
+<!-- LOGGER TRACKING SCRIPT V.31 FOR nsdi.go.kr/lxportal/ / 1032 : FAIL-SAFE TYPE / DO NOT ALTER THIS SCRIPT. -->
+<!-- COPYRIGHT (C) 2002-2020 BIZSPRING INC. LOGGER(TM) ALL RIGHTS RESERVED. -->
+<script>/* LOGGER TRACKING SCRIPT V.31 : 1032 *//*X*//* COPYRIGHT 2002-2020 BIZSPRING INC. *//*X*//* DO NOT MODIFY THIS SCRIPT. *//*X*/var _TRK_DOMAIN="logger.lx.or.kr";var _trk_bMSIE=(document.all)?true:false;var _trk_bJS12=(window.screen)?true:false;function _trk_escape(_str) { var str, ch; var bEncURI = "N"; eval("try{bEncURI=encodeURI('Y');}catch(_e){ }" ); if( bEncURI == "Y" ) str=encodeURI(_str); else str = escape(_str); str=str.split("+").join("%2B"); str=str.split("/").join("%2F"); str=str.split("&").join("%26"); str=str.split("?").join("%3F"); str=str.split(":").join("%3A"); str=str.split("#").join("%23"); return str;}function _trk_setCookie(name,value,expire) { var today=new Date(); today.setTime(today.getTime()+ expire ); document.cookie=name+"="+value+"; path=/; expires="+today.toGMTString()+";";}function _trk_getCookie(name) { var cookieName=name+"="; var x=0; while(x<=document.cookie.length) { var y=(x+cookieName.length); if(document.cookie.substring(x,y)==cookieName) {  if((endOfCookie=document.cookie.indexOf(";",y))==-1) endOfCookie=document.cookie.length;  return unescape(document.cookie.substring(y,endOfCookie)); } x=document.cookie.indexOf(" ",x)+1; if(x == 0) break; } return "";}function _trk_getParameter(name) { var paraName=name+"="; var URL=""+self.document.location.search; var tURL=""; eval("try{ tURL=top.document.location.search; }catch(_e){}"); URL=URL+"&"+tURL; if(URL.indexOf(paraName)!=-1) { var x=URL.indexOf(paraName)+paraName.length; var y=URL.substr(x).indexOf("&"); if(y!=-1) return URL.substring(x,x+y); else return URL.substr(x); } return "";}function _trk_make_code(_TRK_SERVER,_TRK_U) { var dt=document.title.toString(); dt=dt.substr(0,128); var dr=self.document.referrer; var tdr=""; eval("try{ tdr=top.document.referrer; }catch(_e){}"); var tdu=""; eval("try{ tdu=top.document.location.href; }catch(_e){}"); var bFrm=false; if(dr==tdu) { dr=tdr; bFrm=true; } if(dr=="undefined") dr=""; var du=self.document.location.href; if(du.substr(0,4)=="file") return ""; var adKeyVal = ""; if(bFrm) { adKeyVal=_trk_getParameter("OVKEY"); if(adKeyVal!="" && du.indexOf("OVKEY=")<0) {  if(du.indexOf("?")!=-1) du=du+"&OVKEY="+adKeyVal; else du=du+"?OVKEY="+adKeyVal;  adKeyVal=_trk_getParameter("OVRAW");  if(adKeyVal!="" && du.indexOf("OVRAW=")<0 ) if(du.indexOf("?")!=-1) du=du+"&OVRAW="+adKeyVal; else du=du+"?OVRAW="+adKeyVal; } else {  adKeyVal=_trk_getParameter("netpia");  if(adKeyVal!="" && du.indexOf("netpia=")<0 ) if(du.indexOf("?")!=-1) du=du+"&netpia="+adKeyVal; else du=du+"?netpia="+adKeyVal; } adKeyVal=_trk_getParameter("logger_kw"); if(adKeyVal!="" && du.indexOf("logger_kw=")<0 )  if(du.indexOf("?")!=-1) du=du+"&logger_kw="+adKeyVal; else du=du+"?logger_kw="+adKeyVal; adKeyVal=_trk_getParameter("source"); if(adKeyVal!="" && du.indexOf("source=")<0 )  if(du.indexOf("?")!=-1) du=du+"&source="+adKeyVal; else du=du+"?source="+adKeyVal; adKeyVal=_trk_getParameter("keywd"); if(adKeyVal!="" && du.indexOf("keywd=")<0 )  if(du.indexOf("?")!=-1) du=du+"&keywd="+adKeyVal; else du=du+"?keywd="+adKeyVal; adKeyVal=_trk_getParameter("NVADID"); if(adKeyVal!="" && du.indexOf("NVADID=")<0 )  if(du.indexOf("?")!=-1) du=du+"&NVADID="+adKeyVal; else du=du+"?NVADID="+adKeyVal; adKeyVal=_trk_getParameter("NVAR"); if(adKeyVal!="" && du.indexOf("NVAR=")<0 )  if(du.indexOf("?")!=-1) du=du+"&NVAR="+adKeyVal; else du=du+"?NVAR="+adKeyVal; adKeyVal=_trk_getParameter("NVADKWD");  if(adKeyVal!="" && du.indexOf("NVADKWD=")<0)  if(du.indexOf("?")!=-1) du=du+"&NVADKWD="+adKeyVal; else du=du+"?NVADKWD="+adKeyVal;  adKeyVal=_trk_getParameter("NVKWD");  if(adKeyVal!="" && du.indexOf("NVKWD=")<0 )  if(du.indexOf("?")!=-1) du=du+"&NVKWD="+adKeyVal; else du=du+"?NVKWD="+adKeyVal;   adKeyVal=_trk_getParameter("DWIT");  if(adKeyVal!="" && du.indexOf("DWIT=")<0) if(du.indexOf("?")!=-1) du=du+"&DWIT="+adKeyVal; else du=du+"?DWIT="+adKeyVal;  adKeyVal=_trk_getParameter("DWIC");  if(adKeyVal!="" && du.indexOf("DWIC=")<0 )  if(du.indexOf("?")!=-1) du=du+"&DWIC="+adKeyVal; else du=du+"?DWIC="+adKeyVal;  adKeyVal=_trk_getParameter("gad"); if(adKeyVal!="" && du.indexOf("gad=")<0 )  if(du.indexOf("?")!=-1) du=du+"&gad="+adKeyVal; else du=du+"?gad="+adKeyVal; adKeyVal=_trk_getParameter("gclid"); if(adKeyVal!="" && du.indexOf("gclid=")<0 )  if(du.indexOf("?")!=-1) du=du+"&gclid="+adKeyVal; else du=du+"?gclid="+adKeyVal; adKeyVal=_trk_getParameter("gkw"); if(adKeyVal!="" && du.indexOf("gkw=")<0 )  if(du.indexOf("?")!=-1) du=du+"&gkw="+adKeyVal; else du=du+"?gkw="+adKeyVal; adKeyVal=_trk_getParameter("rcsite"); if(adKeyVal!="" && du.indexOf("rcsite=")<0 )  if(du.indexOf("?")!=-1) du=du+"&rcsite="+adKeyVal; else du=du+"?rcsite="+adKeyVal; adKeyVal=_trk_getParameter("rctype"); if(adKeyVal!="" && du.indexOf("rctype=")<0 )  if(du.indexOf("?")!=-1) du=du+"&rctype="+adKeyVal; else du=du+"?rctype="+adKeyVal; adKeyVal=_trk_getParameter("rc_code"); if(adKeyVal!="" && du.indexOf("rc_code=")<0 )  if(du.indexOf("?")!=-1) du=du+"&rc_code="+adKeyVal; else du=du+"?rc_code="+adKeyVal; adKeyVal=_trk_getParameter("_C_"); if(adKeyVal!="" && du.indexOf("_C_=")<0 )  if(du.indexOf("?")!=-1) du=du+"&_C_="+adKeyVal; else du=du+"?_C_="+adKeyVal; } var ce=navigator.cookieEnabled?"Y":"N"; var je=navigator.javaEnabled()?"Y":"N"; var ss=""; var cd = ""; if(_trk_bJS12) { ss=screen.width+"x"+screen.height; cd=screen.colorDepth; } if(!dt) dt=""; if(!dr) dr=""; if(!du) du=""; if(!ce) ce=""; if(!je) je=""; var t = new Date; var tye=(_trk_bMSIE)?(t.getYear()):(t.getFullYear()); var tmo=t.getMonth()+1; var tda=t.getDate(); var tho=t.getHours(); var tmi=t.getMinutes(); var tse=t.getSeconds(); var tzo=t.getTimezoneOffset(); var tc = ""; var prtcl="https://"; if(prtcl=="https://") _TRK_SERVER=_TRK_DOMAIN; tc=tc+prtcl+_TRK_SERVER; var bPNF=((typeof _TRK_PI)!="undefined" && _TRK_PI=="PNF")?true:false; if(bPNF) tc=tc+"/tracker_click.tsp"; else tc=tc+"/tracker.tsp"; tc=tc+"?u="+_TRK_U+"&XU=&EXEN="+_EXEN; if(bPNF) { tc=tc+"&rnd="+Math.random()+"&CKFL="+_TRK_PI+"&CKDATA="+_trk_escape(du); } else { tc=tc+"&dr="+_trk_escape(dr)+"&XDR="+"&dt="+_trk_escape(dt)+"&du="+_trk_escape(du); if((typeof _TRK_CP)!="undefined" && _TRK_CP!="") tc=tc+"&CP="+_trk_escape(_TRK_CP)+"&XCP="; if((typeof _TRK_PI)!="undefined" && _TRK_PI!="") tc=tc+"&PI="+_TRK_PI; if((typeof _TRK_PN)!="undefined" && _TRK_PN!="") tc=tc+"&PN="+_trk_escape(_TRK_PN); if((typeof _TRK_MF)!="undefined" && _TRK_MF!="") tc=tc+"&MF="+_trk_escape(_TRK_MF); if((typeof _TRK_OA)!="undefined" && _TRK_OA!="") tc=tc+"&OA="+_TRK_OA; if((typeof _TRK_OP)!="undefined" && _TRK_OP!="") tc=tc+"&OP="+_trk_escape(_TRK_OP); if((typeof _TRK_OE)!="undefined" && _TRK_OE!="") tc=tc+"&OE="+_TRK_OE; if((typeof _TRK_CC)!="undefined" && _TRK_CC!="") tc=tc+"&CC="+_TRK_CC; if((typeof _TRK_RK)!="undefined" && _TRK_RK!="") tc=tc+"&RK="+_trk_escape(_TRK_RK); if((typeof _TRK_SX)!="undefined" && _TRK_SX!="") tc=tc+"&SX="+_TRK_SX; if((typeof _TRK_AG)!="undefined" && _TRK_AG!="") tc=tc+"&AG="+_TRK_AG; if((typeof _TRK_IK)!="undefined" && _TRK_IK!="") tc=tc+"&IK="+_trk_escape(_TRK_IK); tc=tc+"&js=Y"+"&ss="+escape(ss)+"&cd="+cd+"&ce="+ce+"&je="+je+"&tzo="+tzo+"&tye="+tye+"&tmo="+tmo+"&tda="+tda+"&tho="+tho+"&tmi="+tmi+"&tse="+tse; } return tc;}var _TRK_LIFE=_trk_getParameter("_L_");if(_TRK_LIFE=="") _TRK_LIFE=14;_TRK_LIFE = parseInt(_TRK_LIFE)*24*60*60*1000;var _TRK_U="";var _TRK_U_P=_trk_getParameter("_U_");var _TRK_U_C= _trk_getCookie("_TRK_U");if(_TRK_U_C!="") _TRK_U=_TRK_U_C;if(_TRK_U_P!="") _TRK_U=_TRK_U_P;if(_TRK_U!="" && _TRK_U_P!="") _trk_setCookie("_TRK_U",_TRK_U,_TRK_LIFE);var _TRK_CC_C=_trk_getCookie("_TRK_CC");var _TRK_CC_P=_trk_getParameter("_C_");if((typeof _TRK_CC)!="undefined" && _TRK_CC!="") _TRK_CC_P=_TRK_CC;if(_TRK_CC_C!="") _TRK_CC=_TRK_CC_C;if(_TRK_CC_P!="") _TRK_CC=_TRK_CC_P;if((typeof _TRK_CC)!="undefined" && _TRK_CC!="" && _TRK_CC_P!="") _trk_setCookie("_TRK_CC",_TRK_CC,_TRK_LIFE);var _TRK_RK_C=_trk_getCookie("_TRK_RK");var _TRK_RK_P=_trk_getParameter("_R_");if((typeof _TRK_RK)!="undefined" && _TRK_RK!="") _TRK_RK_P=_TRK_RK;if(_TRK_RK_C!="") _TRK_RK=_TRK_RK_C;if(_TRK_RK_P!="") _TRK_RK=_TRK_RK_P;if((typeof _TRK_RK)!="undefined" && _TRK_RK!="" && _TRK_RK_P!="") _trk_setCookie("_TRK_RK",_TRK_RK,_TRK_LIFE);var _SS_LIFE = 30*60*1000;var _EXEN = _trk_getCookie("_EXEN");if( _EXEN == "" ) _EXEN = 0; _EXEN ++;_trk_setCookie("_EXEN",_EXEN,_SS_LIFE);var _trk_code_base=_trk_make_code("logger.lx.or.kr","1032");var _trk_code_chan="";if(_TRK_U!="") _trk_code_chan=_trk_code_base.replace(/\?u=1032&XU=/g,"?u="+_TRK_U+"&XU=");var _trk_img_base=new Image();var _trk_img_chan=new Image();var _trk_img_base_click=new Image();var _trk_img_chan_click=new Image();if(_trk_bJS12==true) { if(_trk_bMSIE) { _trk_img_base.src=_trk_code_base; if(_TRK_U!="") _trk_img_chan.src=_trk_code_chan; } else { setTimeout("_trk_img_base.src=_trk_code_base;",1); if(_TRK_U!="") setTimeout("_trk_img_chan.src=_trk_code_chan;",1); }} else { if(_trk_bMSIE) document.write('<div style=\"display: none\">'); document.write('<img src=\"'+_trk_code_base+'\" height=\"0\" width=\"0\">'); if(_TRK_U!="") document.write('<img src=\"'+_trk_code_chan+'\" height=\"0\" width=\"0\">'); if(_trk_bMSIE) document.write('</div>');}function _trk_flashEnvView(env1,env2,env3,env4,env5,env6,env7,env8,env9,env10,env11,env12){ var _trk_code_flash=_trk_code_base; for (var envCnt=1; envCnt< 13; envCnt++){ if((eval("env"+envCnt) != "") && (typeof eval("env"+envCnt) != "undefined" )){  var trk_str  = eval("env"+envCnt) ;  if(trk_str.indexOf("_TRK_CP")>=0){   var trk_cp = trk_str.split('=');   var _TRK_CP = trk_cp[1];   _trk_code_flash=_trk_code_flash.replace(/&CP=.*&XCP=/g,"&XCP=");   _trk_code_flash=_trk_code_flash.replace(/&dr=.*&XDR=/g,"&XDR=");   _trk_code_flash=_trk_code_flash+"&dr=&CP="+_trk_escape(_TRK_CP)+"&rnd="+Math.random();   if(_TRK_U!="") {    _trk_code_flash=_trk_code_flash.replace(/\?u=1032&XU=/g,"?u="+_TRK_U+"&XU=");   }  }  if((trk_str.indexOf("_TRK_PN")>=0) || (trk_str.indexOf("_TRK_MF")>=0) || (trk_str.indexOf("_TRK_RK")>=0) || (trk_str.indexOf("_TRK_OP")>=0) || (trk_str.indexOf("_TRK_IK")>=0)){   var trk_env = trk_str.split('=');   var _TRK_ENV = _trk_escape(trk_env[1]);   var tkr_env_name = trk_str.substring(trk_str.indexOf('_',1)+1,trk_str.lastIndexOf('='));   var _trk_envs = "&"+tkr_env_name+"="+ _TRK_ENV;   if( _trk_code_flash.indexOf("&"+tkr_env_name+"=") > 0) {    var regVal = "\&"+tkr_env_name+"\=(.*)(\&PN\=|\&MF\=|\&OA\=|\&OP\=|\&OE\=|\&CC\=|\&RK\=|\&SX\=|\&AG\=|\&IK\=|\&js\=)";    var envReg = new RegExp(regVal, 'gi');    var envRst = _trk_code_flash.match(envReg);    var envRst = envRst.toString();    var envArr = envRst.split('&');    var envVar = envArr[1];    _trk_code_flash=_trk_code_flash.replace("&"+envVar+"&", _trk_envs);   }else{    _trk_code_flash = _trk_code_flash+"&"+tkr_env_name+"="+_TRK_ENV;   }  }  if((trk_str.indexOf("_TRK_PI")>=0) || (trk_str.indexOf("_TRK_OA")>=0) || (trk_str.indexOf("_TRK_OE")>=0) || (trk_str.indexOf("_TRK_CC")>=0) || (trk_str.indexOf("_TRK_SX")>=0) || (trk_str.indexOf("_TRK_AG")>=0)){   var trk_env = trk_str.split('=');   var _TRK_ENV = trk_env[1];   var tkr_env_name = trk_str.substring(trk_str.indexOf('_',1)+1,trk_str.lastIndexOf('='));   var _trk_envs = "&"+tkr_env_name+"="+_TRK_ENV+"&";   if( _trk_code_flash.indexOf("&"+tkr_env_name+"=") > 0) {    var regVal = "\&"+tkr_env_name+"\=(.*)(\&PN\=|\&MF\=|\&OA\=|\&OP\=|\&OE\=|\&CC\=|\&RK\=|\&SX\=|\&AG\=|\&IK\=|\&js\=)";    var envReg = new RegExp(regVal, 'gi');    var envRst = _trk_code_flash.match(envReg);    var envRst = envRst.toString();    var envArr = envRst.split('&');    var envVar = envArr[1];    _trk_code_flash=_trk_code_flash.replace("&"+envVar+"&", _trk_envs);   }else{    _trk_code_flash = _trk_code_flash+"&"+tkr_env_name+"="+_TRK_ENV;   }  } } } _trk_img_base_click.src=_trk_code_flash ;}function _trk_flashContentsView(_TRK_PI, _TRK_CP) { var _trk_code_flash=_trk_code_base; var _trk_piv = "&PI="+_TRK_PI+"&"; _trk_code_flash=_trk_code_flash.replace(/&CP=.*&XCP=/g,"&XCP="); _trk_code_flash=_trk_code_flash.replace(/&dr=.*&XDR=/g,"&XDR="); if( _trk_code_flash.indexOf("&PI=") > 0) { var regVal = "\&PI\=(.*)(\&PN\=|\&MF\=|\&OA\=|\&OP\=|\&OE\=|\&CC\=|\&RK\=|\&SX\=|\&AG\=|\&IK\=|\&js\=)"; var envReg = new RegExp(regVal, 'gi'); var envRst = _trk_code_flash.match(envReg); var envRst = envRst.toString(); var envArr = envRst.split('&'); var envVar = envArr[1]; _trk_code_flash=_trk_code_flash.replace("&"+envVar+"&", _trk_piv ); }else{ _trk_code_flash = _trk_code_flash+"&PI="+_TRK_PI; } _trk_img_base_click.src=_trk_code_flash+"&dr=&CP="+_trk_escape(_TRK_CP)+"&rnd="+Math.random(); if(_TRK_U!="") { _trk_code_flash=_trk_code_flash.replace(/\?u=1032&XU=/g,"?u="+_TRK_U+"&XU="); _trk_img_chan_click.src=_trk_code_flash+"&dr=&CP="+_trk_escape(_TRK_CP)+"&rnd="+Math.random(); }}function _trk_clickTrace(_TRK_CKFL,_TRK_CKDATA) { var _trk_code_click=_trk_code_base.substr(0,_trk_code_base.indexOf("tracker.tsp")); _trk_code_click=_trk_code_click+"tracker_click.tsp?rnd="+Math.random()+"&CKFL="+_TRK_CKFL+"&CKDATA="+_trk_escape(_TRK_CKDATA); _trk_img_base_click.src=_trk_code_click+"&u=1032"; if(_TRK_U!="") _trk_img_chan_click.src=_trk_code_click+"&u="+_TRK_U;}function _trk_adClick( adSvr, svcCode, adCode ) { var ac = ""; var prtcl="https://"; if(prtcl=="https://") adSvr=_TRK_DOMAIN; ac=ac+prtcl+adSvr; _trk_img_base_click.src=ac+"/tracker_ad.tsp?u="+svcCode+"&mode=C&adCode="+adCode;}</script>
+<noscript><img src="http://logger.lx.or.kr/tracker.tsp?u=1032&js=N" width=0 height=0 alt="로거 트래커 노스크립트 이미지" /></noscript>
+<!-- END OF LOGGER TRACKING SCRIPT -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="" src="project_files/js"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-126541033-1');
+</script>
+		
+
+
+
+</body></html>
